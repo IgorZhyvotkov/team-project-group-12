@@ -266,7 +266,7 @@
 	font-size: 16px;
 	line-height: 1.31;
 	text-align: center;
-	
+
 	&:hover,
 	&:focus {
 		background-color: var(--button-hover-color);
@@ -274,6 +274,8 @@
 }
 
 .contacts-buttons__btn-location {
+	color: var(--text-white-color);
+	background-color: var(--accent-color);
 
 	@media screen and (max-width: 767px) {
 		margin-bottom: 10px;
@@ -285,15 +287,9 @@
 	}
 
 	@media screen and (min-width: $desktop) {
-		margin-bottom: 0;
 		margin-right: 12px;
 	}
-	
-
-	color: var(--text-white-color);
-	background-color: var(--accent-color);
 }
-
 
 .contacts-buttons__btn-franchise {
 	color: var(--accent-color);

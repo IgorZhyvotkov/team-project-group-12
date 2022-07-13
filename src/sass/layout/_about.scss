@@ -1,0 +1,33 @@
+.about__label {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--label-color);
+}
+.about__title {
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-color);
+}
+.about__resume {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--text-black-color);
+}
+.about__description {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--text-grey-color);
+}
+.about__btn {
+}
