@@ -1,31 +1,53 @@
 .contacts {
-	min-width: 320px;
-	background-color: var(--light-pink-bg);
+	width: 320px;
+	background-image: linear-gradient(#E5E5E5 20%, var(--light-pink-bg) 80%);
 }
-.container {
-	padding: 0;
+.contacts .container {
+	padding: 40px 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 /*
 .contacts__list {
 }
 */
 .contacts__item {
+	padding: 40px 32px;
 	background-color: var(--white-bg-color);
+	box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+	border-radius: 24px;
+
+	&:last-child {
+		margin-bottom: 32px;
+	}
+}
+
+.contacts__item + .contacts__item {
+	margin-top: 20px;
 }
 
 .contacts__title-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	height: 16px;
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 1.86;
-	text-align: center;
+
 	color: var(--text-white-color);
+	border-radius: 4px;
+
 }
 
 .contacts__title-text--brown {
+	width: 80px;
 	background-color: var(--products-brown-bg);
 }
 
 .contacts__title-text--green {
+	width: 130px;
 	background-color: var(--products-green-bg);
 }
 /*
@@ -33,6 +55,7 @@
 }
 */
 .contacts-card__title {
+	margin-bottom: 8px;
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 1.86;
@@ -41,19 +64,29 @@
 }
 
 .contacts-card__bottom-text {
+	padding-bottom: 24px;
+	margin-bottom: 24px;
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 1.5;
 
 	color: var(--text-grey-color);
+	border-bottom: 1px solid #E1E1E1;
+
 }
-/*
+
 .contacts-card__list {
+	margin-bottom: 24px;
 }
 
 .contacts-card__item {
+		margin-bottom: 8px;
+
+	&:last-child {
+		padding-bottom: 24px;
+		border-bottom: 1px solid #E1E1E1;
+	}
 }
-*/
 
 .contacts-card__work-day {
 	font-weight: 500;
@@ -70,6 +103,7 @@
 	
 	color: var(--label-color);
 }
+
 /*
 .location-contacts {
 }
@@ -85,15 +119,16 @@
 	color: var(--text-grey-color);
 }
 
-.contacts__button {
+.contacts-button {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .button {
 	display: inline-block;
 	border: none;
-	min-width: 320px;
+	min-width: 162px;
 	height: 44px;
 	border-radius: 22px;
 
@@ -102,9 +137,11 @@
 	font-size: 16px;
 	line-height: 1.31;
 	text-align: center;
+	
 }
 
 .contacts-button__btn-location {
+	margin-bottom: 10px;
 	color: var(--text-white-color);
 	background-color: var(--accent-color);
 }
