@@ -1,18 +1,77 @@
 <section class="about">
-  <div class="about__container container">
+  <div class="about__container">
     <p class="about__label">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
-    <p class="about__resume">
-      Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-      cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo
-      fringilla.
-    </p>
-    <p class="about__description">
-      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-      Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-      suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-      tincidunt. Aliquam erat volutpat. Aenean accumsan.
-    </p>
+    <div class="about__flex-wrap">
+      <picture class="about__img">
+        <source
+          srcset="
+            ./images/mob/mob-bio-min.png    280w,
+            ./images/mob/mob-bio@2x-min.png 560w
+          "
+          media="(max-width: 767px)"
+          sizes="100vw"
+          type="image/png" />
+        <source
+          srcset="
+            ./images/tab/tab-bio-min.png    336w,
+            ./images/tab/tab-bio@2x-min.png 672w
+          "
+          media="(min-width: $tablet)"
+          sizes="50vw"
+          type="image/png" />
+        <source
+          srcset="
+            ./images/desk/bio-min.png     501w,
+            ./images/desk/bio@2x-min.png 1002w
+          "
+          media="(min-width: $desktop)"
+          sizes="50vw"
+          type="image/png" />
+        <img src="./images/mob/mob-bio-min.png" alt="happy cow"
+      /></picture>
+      <picture class="about__bg-img">
+        <source
+          srcset="
+            ./images/mob/mob-eco-bg-min.png    280w,
+            ./images/mob/mob-eco-bg@2x-min.png 560w
+          "
+          media="(max-width: 767px)"
+          sizes="100vw"
+          type="image/png" />
+        <source
+          srcset="
+            ./images/desk/eco-bg-min.png    1200w,
+            ./images/desk/eco-bg@2x-min.png 2400w
+          "
+          media="(min-width: $desktop)"
+          sizes="100vw"
+          type="image/png" />
+        <img src="./images/mob/mob-eco-bg-min.png" alt="milk"
+      /></picture>
+      <div>
+        <p class="about__resume">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__description">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+          <br />
+          <br />
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button type="button" class="about__btn">
+          Read more
+          <span
+            ><svg width="4.43" height="8">
+              <use href="./images/sprite.svg#icon-small-arow"></use></svg
+          ></span>
+        </button>
+      </div>
+    </div>
   </div>
-  <button type="button" class="about__btn button">Read more</button>
 </section>
