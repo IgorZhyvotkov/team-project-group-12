@@ -9,6 +9,7 @@
 	}
 
 	@media screen and (min-width: $desktop) {
+		max-width: 1200px;
 		background: linear-gradient(to top, var(--light-pink-bg) 75%, #e5e5e5 25%);
 	}
 }
@@ -56,7 +57,7 @@
 			margin-top: 20px;
 		}
 	}
-	
+
 	@media screen and (min-width: $desktop) {
 		padding: 40px;
 		}
@@ -117,6 +118,7 @@
 	color: var(--text-black-color);
 
 	@media screen and (min-width: $tablet) {
+		margin-bottom: 12px;
 		font-size: 14px;
 	}
 
@@ -145,6 +147,7 @@
 	}
 
 	@media screen and (min-width: $desktop) {
+		padding-right: 40px;
 		font-size: 16px;
 		line-height: 1.83;
 	}
@@ -233,6 +236,13 @@
 
 	color: var(--text-grey-color);
 
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+
 	@media screen and (min-width: $tablet) {
 		font-size: 14px;
 		line-height: 1.83;
@@ -242,9 +252,12 @@
 		font-size: 16px;
 		line-height: 1.83;
 	}
+
+	
 }
 
 .contacts-buttons {
+	@extend .list;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -256,7 +269,9 @@
 }
 
 .contacts-btn {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 	border: none;
 	min-width: 162px;
 	padding: 0;
@@ -269,6 +284,8 @@
 	font-size: 16px;
 	line-height: 1.31;
 	text-align: center;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
 	&:focus {
@@ -287,14 +304,25 @@
 	@media screen and (min-width: $tablet) {
 		margin-bottom: 0;
 		margin-right: 14.5px;
+		min-width: 191.45px;
 	}
 
 	@media screen and (min-width: $desktop) {
 		margin-right: 12px;
+		min-width: 198px;
 	}
 }
 
 .contacts-buttons__btn-franchise {
 	color: var(--accent-color);
 	background-color: var(--text-white-color);
+
+	@media screen and (min-width: $tablet) {
+		min-width: 174px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		min-width: 168px;
+	}
 }
+
