@@ -24,7 +24,14 @@ button {
   align-items: center;
   justify-content: center;
 }
-
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
 $mobile: 320px;
 $tablet: 768px;
 $desktop: 1200px;
