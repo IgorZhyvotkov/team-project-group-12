@@ -1,5 +1,4 @@
 .about {
-  position: relative;
   width: 320px;
   background-color: var(--light-pink-bg);
   @media screen and (min-width: $tablet) {
@@ -68,28 +67,50 @@
 .about__flex-wrap {
   @media screen and (min-width: $tablet) {
     display: flex;
+    align-items: center;
   }
 }
 .about__img {
-  display: block;
-  width: 280px;
-  height: auto;
-  margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+    height: 279px;
+    background-image: url(../images/mob/mob-bio-min.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mob/mob-bio@2x-min.png);
+    }
+    margin-bottom: 40px;
+  }
   @media screen and (min-width: $tablet) {
-    width: 366px;
+    width: 336px;
+    height: 335px;
+    background-image: url(../images/tab/tab-bio-min.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tab/tab-bio@2x-min.png);
+    }
+    flex-shrink: 0;
     margin-right: 32px;
   }
   @media screen and (min-width: $desktop) {
     width: 501px;
+    height: 501px;
+    background-image: url(../images/desk/bio-min.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desk/bio@2x-min.png);
+    }
     margin-right: 99px;
   }
-  img {
-    width: 100%;
-  }
-}
-.about__bg-img {
-  position: absolute;
-  top: 0;
 }
 .about__resume {
   font-family: 'DM Sans';
@@ -97,11 +118,12 @@
   font-size: 12px;
   line-height: 1.62;
   color: var(--text-black-color);
+  margin-right: 60px;
   margin-bottom: 32px;
   @media screen and (min-width: $tablet) {
-    width: 100%;
     font-size: 14px;
     line-height: 1.76;
+    margin-right: 0;
   }
   @media screen and (min-width: $desktop) {
     font-size: 16px;
@@ -109,18 +131,18 @@
   }
 }
 .about__description {
-  width: 100%;
-
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
   color: var(--text-grey-color);
+  margin-right: 60px;
   margin-bottom: 20px;
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.76;
     letter-spacing: 0.04em;
+    margin-right: 0;
   }
   @media screen and (min-width: $desktop) {
     line-height: 1.94;
@@ -137,9 +159,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: calc(18 / 14);
-  display: flex;
-  align-items: center;
-  text-align: center;
+  @include flexCentered;
   color: var(--accent-color);
   @media screen and (min-width: $tablet) {
     font-size: 16px;
