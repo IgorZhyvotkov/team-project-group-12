@@ -2,14 +2,29 @@
     background-color: var(--hero-bg-color);
 }
 
+.container-hero {
+    background-color: var(--hero-bg-color);
+}
+
 .hero__title {
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
-    line-height: 30px;
+    line-height: calc(30 / 26);
+    letter-spacing: 0.04em;
+    // text-transform: uppercase;
+
+    color: var(--white-bg-color);
+}
+
+.hero__title-secondary {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: calc(30 / 26);
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: var(--accent-color);
 }
