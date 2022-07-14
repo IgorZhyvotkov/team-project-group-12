@@ -253,11 +253,15 @@
 
     @media screen and (min-width: $desktop) {
         display: flex;
-        // position: absolute;
+        position: absolute;
+        top: 423px;
+        right: 56px;
     }
 
     @media screen and (min-width: $tablet) {
         display: flex;
-        // position: absolute;
+        position: absolute;
+        top: 265px;
+        right: 32px;
     }
 }
