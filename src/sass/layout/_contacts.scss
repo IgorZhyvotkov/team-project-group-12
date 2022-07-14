@@ -2,15 +2,15 @@
 	min-width: 320px;
 	margin-left: auto;
 	margin-right: auto;
-	background: linear-gradient(to top, var(--light-pink-bg) 77%, #e5e5e5 23%);
+	background: linear-gradient(to top, var(--light-pink-bg) 77%, var(--white-bg-color) 23%);
 
 	@media screen and (min-width: $tablet) {
-		background: linear-gradient(to top, var(--light-pink-bg) 50%, #e5e5e5 50%);
+		background: linear-gradient(to top, var(--light-pink-bg) 50%, var(--white-bg-color) 50%);
 	}
 
 	@media screen and (min-width: $desktop) {
 		max-width: 1200px;
-		background: linear-gradient(to top, var(--light-pink-bg) 75%, #e5e5e5 25%);
+		background: linear-gradient(to top, var(--light-pink-bg) 75%, var(--white-bg-color) 25%);
 	}
 }
 .container__contacts {
@@ -285,10 +285,11 @@
 	line-height: 1.31;
 	text-align: center;
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
 	&:focus {
+		color: var(--accent-color);
 		background-color: var(--button-hover-color);
 	}
 }
@@ -311,6 +312,10 @@
 		margin-right: 12px;
 		min-width: 198px;
 	}
+
+	& .contacts-buttons__icon {
+		fill: currentColor;
+	}
 }
 
 .contacts-buttons__btn-franchise {
@@ -323,6 +328,10 @@
 
 	@media screen and (min-width: $desktop) {
 		min-width: 168px;
+	}
+
+	& .contacts-buttons__icon {
+		fill: currentColor;
 	}
 }
 
