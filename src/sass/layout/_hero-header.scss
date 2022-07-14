@@ -1,30 +1,269 @@
 .header-hero {
     background-color: var(--hero-bg-color);
+    height: 100vh;
+    position: relative;
+}
+
+.nav {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
+
 }
 
 .container-hero {
-    background-color: var(--hero-bg-color);
+    @extend .container;
+
 }
 
-.hero__title {
+.hero-lable {
+    width: auto;
+    padding-left: 20px;
+
+}
+
+.hero-lable__pre {
+    margin: 0;
+}
+
+.hero-lable__title {
+    margin: 0;
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
-    line-height: calc(30 / 26);
+    line-height: calc(29.77 / 26);
     letter-spacing: 0.04em;
-    // text-transform: uppercase;
-
     color: var(--white-bg-color);
+
+    @media screen and (min-width: $desktop) {
+        font-size: 38px;
+        line-height: 1.145;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+        line-height: 1.145;
+    }
+
+    text-transform: uppercase;
 }
 
-.hero__title-secondary {
+.hero-lable__title-text {
+    margin: 0;
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
-    line-height: calc(30 / 26);
+    line-height: calc(29.77 / 26);
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
+    color: var(--white-bg-color);
+
+    @media screen and (min-width: $desktop) {
+        font-size: 38px;
+        line-height: 1.145;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+        line-height: 1.145;
+    }
+
+}
+
+.hero-lable__title-accent {
+    margin: 0;
+    // @include flexCentered;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: calc(48 / 46.32);
+    letter-spacing: 0.04em;
     color: var(--accent-color);
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 58px;
+        line-height: 1.145;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 37px;
+        line-height: 1.145;
+    }
+}
+
+.hero__list {
+    display: none;
+    list-style: none;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.hero-btn__list {
+    display: flex;
+    list-style: none;
+}
+
+.hero-btn__item {
+    margin-left: 8px;
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 12px;
+    }
+}
+
+.hero__btn-products {
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+    background: #D41443;
+    border-radius: 20px;
+    border: none;
+
+    color: #FFFFFF;
+}
+
+.hero__btn-process {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #D41443;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+}
+
+.hero__about {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+
+    }
+}
+
+// .hero__about-btn {
+//     display: none;
+
+//     @media screen and (min-width: $desktop) {
+//         display: flex;
+
+//     }
+
+//     @media screen and (min-width: $tablet) {
+//         display: flex;
+
+//     }
+// }
+
+.hero__milk {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        position: absolute;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        position: absolute;
+    }
+}
+
+
+.hero__ice-cream {
+    position: absolute;
+    width: 171px;
+    height: 410px;
+    top: 92px;
+    left: 117px;
+
+    @media screen and (min-width: $desktop) {
+
+        // width: 236px;
+        // height: 557px;
+        top: 108px;
+        left: auto;
+        right: 368px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        // width: 143px;
+        // height: 336px;
+        top: 80px;
+        left: auto;
+        right: 303px;
+    }
+
+}
+
+.hero__ice-bg {
+    position: absolute;
+    top: 83px;
+    left: 36px;
+
+    @media screen and (min-width: $desktop) {
+
+        top: 54px;
+        right: 189px;
+        left: auto;
+    }
+
+    @media screen and (min-width: $tablet) {
+        top: 43px;
+        right: 185px;
+        left: auto;
+    }
+}
+
+.hero__girl {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        position: absolute;
+        top: 423px;
+        right: 56px;
+        left: auto;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        position: absolute;
+        top: 265px;
+        right: 32px;
+        left: auto;
+    }
 }

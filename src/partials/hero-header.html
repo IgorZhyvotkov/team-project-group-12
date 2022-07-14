@@ -1,5 +1,5 @@
-<header class="header-hero">
-  <div class="container">
+<section class="header-hero">
+  <div class="container__header">
     <svg class="menu__open" width="199" height="50">
       <use href="./images/sprite.svg#icon-logo"></use>
     </svg>
@@ -31,26 +31,8 @@
     ></button>
   </div>
 </header>
-<section class="container-hero">
-  <div class="hero__text">
-    <h1 class="hero__title">ice cream made with</h1>
-    <h2 class="hero__title-secondary">PASSION</h2>
-    <h3 class="hero__cafes">16</h3>
-    <p class="hero__cafes-text">cafes</p>
-    <h3 class="hero__trucks">23</h3>
-    <p class="hero__trucks-text">food trucks</p>
-    <button class="button hero__btn">Products</button>
-    <button class="button hero__btn">How it's made?</button>
-    <p class="hero__info">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et
-    </p>
-    <button class="button hero__btn-about">
-      <svg class="" width="20" height="12">
-        <use href="./images/sprite.svg#icon-burger"></use>
-      </svg>
-    </button>
-  </div>
+<div class="container-hero">
+
   <div class="hero container">
     <div class="hero__milk">
       <picture>
@@ -79,29 +61,8 @@
     </div>
 
     <div class="hero__ice">
-      <picture>
-        <source
-          srcset="
-            ./images/desk/hero3-min.png    1x,
-            ./images/desk/hero3@2x-min.png 2x
-          "
-          media="(min-width:1200px)"
-        />
-        <source
-          srcset="
-            ./images/tab/tab-hero3-min.png    1x,
-            ./images/tab/tab-hero3@2x-min.png 2x
-          "
-          media="(min-width:468px)"
-        />
-        <img
-          src="./images/desk/hero3-min.png"
-          alt="icecream"
-          width="236"
-          height="557"
-        />
-      </picture>
-      <picture>
+      
+      <picture class="hero__ice-bg">
         <source
           srcset="
             ./images/desk/hero2-min.png    1x,
@@ -130,8 +91,30 @@
           height="534"
         />
       </picture>
+      <picture class="hero__ice-cream">
+        <source
+          srcset="
+            ./images/desk/hero3-min.png    1x,
+            ./images/desk/hero3@2x-min.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/tab/tab-hero3-min.png    1x,
+            ./images/tab/tab-hero3@2x-min.png 2x
+          "
+          media="(min-width:468px)"
+        />
+        <img
+          src="./images/desk/hero3-min.png"
+          alt="icecream"
+          width="236"
+          height="557"
+        />
+      </picture>
     </div>
-  </div>
+  
   <div class="hero__girl">
     <picture>
       <source
@@ -156,5 +139,42 @@
         height="241"
       />
     </picture>
+    </div>
   </div>
+  <div class="hero">
+  <div class="hero-lable">
+        <h1 class="hero-lable__title">ice cream
+          <pre class="hero-lable__pre"><span class="hero-lable__title-text">made with </span></pre>
+      <pre class="hero-lable__pre"><span class="hero-lable__title-accent">passion</span></pre>
+    </h1>
+    </div>
+    <ul class="hero__list">
+      <li class="hero__item">
+        <h3 class="hero__item-cafes">16</h3>
+        <p class="hero__item-text">cafes</p>
+      </li>
+      <li class="hero__item">
+        <h3 class="hero__item-trucks">23</h3>
+        <p class="hero__item-text">food trucks</p>
+      </li>
+    </ul>
+    <ul class="hero-btn__list">
+      <li class="hero-btn__item"><button class="button hero__btn-products">Products</button></li>
+      <li class="hero-btn__item"><button  class="button hero__btn-process">How it's made?</button></li>
+    </ul>
+   
+    <div class="hero__about">
+      <p class="hero__about-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+    </p>
+    <button class="button hero__about-btn">
+      <svg class="" width="20" height="12">
+        <use href="./images/sprite.svg#icon-right-arrow"></use>
+      </svg>
+    </button>
+    </div>
+  
+</div>
+</div>
 </section>
