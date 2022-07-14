@@ -1,13 +1,32 @@
 .about {
   width: 320px;
-  background-color: var(--light-pink-bg);
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--light-pink-bg);
+  background-image: url(../images/mob/mob-eco-bg-min.png);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mob/mob-eco-bg@2x-min.png);
+  }
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 594px;
   @media screen and (min-width: $tablet) {
     width: 768px;
+    background-image: none;
   }
   @media screen and (min-width: $desktop) {
     width: 1200px;
+    background-image: url(../images/desk/eco-bg-min.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desk/eco-bg@2x-min.png);
+    }
+    background-position: 0px 236px;
   }
 }
 .about__container {
