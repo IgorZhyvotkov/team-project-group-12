@@ -1,0 +1,158 @@
+.about {
+  position: relative;
+  width: 320px;
+  background-color: var(--light-pink-bg);
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+}
+.about__container {
+  @extend .container;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    padding-right: 34px;
+    padding-bottom: 60px;
+    padding-left: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-right: 121px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+  }
+}
+.about__label {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--label-color);
+  margin-bottom: 15px;
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    margin-bottom: 16px;
+    letter-spacing: 0.04em;
+  }
+}
+.about__title {
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 32px;
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.06em;
+    margin-bottom: 60px;
+  }
+}
+.about__flex-wrap {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.about__img {
+  display: block;
+  width: 280px;
+  height: auto;
+  margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    width: 366px;
+    margin-right: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 501px;
+    margin-right: 99px;
+  }
+  img {
+    width: 100%;
+  }
+}
+.about__bg-img {
+  position: absolute;
+  top: 0;
+}
+.about__resume {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--text-black-color);
+  margin-bottom: 32px;
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+}
+.about__description {
+  width: 100%;
+
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--text-grey-color);
+  margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: $desktop) {
+    line-height: 1.94;
+  }
+}
+.about__btn {
+  min-width: 176px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  background: var(--white-bg-color);
+  @include flexCentered;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--accent-color);
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: calc(21 / 16);
+  }
+  &:hover,
+  &:focus {
+    background: var(--button-hover-color);
+  }
+  svg {
+    fill: currentColor;
+  }
+  span {
+    margin-left: 13.62px;
+  }
+}

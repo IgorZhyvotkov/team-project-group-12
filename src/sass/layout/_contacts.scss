@@ -1,0 +1,120 @@
+// .contacts {
+// 	min-width: 320px;
+// 	background-color: var(--light-pink-bg);
+// }
+// .container {
+// 	padding: 0;
+// }
+/*
+.contacts__list {
+}
+*/
+.contacts__item {
+	background-color: var(--white-bg-color);
+}
+
+.contacts__title-text {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.86;
+	text-align: center;
+	color: var(--text-white-color);
+}
+
+.contacts__title-text--brown {
+	background-color: var(--products-brown-bg);
+}
+
+.contacts__title-text--green {
+	background-color: var(--products-green-bg);
+}
+/*
+.contacts-card {
+}
+*/
+.contacts-card__title {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.86;
+
+	color: var(--text-black-color);
+}
+
+.contacts-card__bottom-text {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.5;
+
+	color: var(--text-grey-color);
+}
+/*
+.contacts-card__list {
+}
+
+.contacts-card__item {
+}
+*/
+
+.contacts-card__work-day {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.86;
+	
+	color: var(--text-black-color);
+}
+
+.contacts-card__work-time {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.86;
+	
+	color: var(--label-color);
+}
+/*
+.location-contacts {
+}
+
+.location-contacts__item {
+}*/
+
+.location-contacts__link {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.5;
+
+	color: var(--text-grey-color);
+}
+
+.contacts__button {
+	display: flex;
+	flex-direction: column;
+}
+
+// .button {
+// 	display: inline-block;
+// 	border: none;
+// 	min-width: 320px;
+// 	height: 44px;
+// 	border-radius: 22px;
+
+// 	font-family: inherit;
+// 	font-weight: 700;
+// 	font-size: 16px;
+// 	line-height: 1.31;
+// 	text-align: center;
+// }
+
+.contacts-button__btn-location {
+	color: var(--text-white-color);
+	background-color: var(--accent-color);
+}
+
+.contacts-button__btn-franchise {
+	color: var(--accent-color);
+	background-color: var(--text-white-color);
+
+	&:hover,
+	&:focus {
+		background-color: var(--button-hover-color);
+	}
+}
