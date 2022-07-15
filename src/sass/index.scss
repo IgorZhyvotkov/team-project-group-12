@@ -1,7 +1,10 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-@import './utils/vars';
-@import './utils/repeating-settings';
+
 @import './utils/reset-styles';
+@import './utils/repeating-settings';
+@import './utils/vars';
+@import './utils/mixins';
+
 @import './layout/common';
 @import './layout/hero-header';
 @import './layout/products';
