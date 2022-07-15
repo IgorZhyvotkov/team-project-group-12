@@ -27,6 +27,7 @@
   }
 }
 .advantages__list {
+  @extend .list;
   @media screen and (min-width: $tablet) {
     display: flex;
   }
@@ -82,12 +83,12 @@
   }
 }
 
-.first-item::before {
+.advantages-list__item--first-item::before {
   content: url(../images/desk/adv-sun.png);
 }
-.second-item::before {
+.advantages-list__item--second-item::before {
   content: url(../images/desk/adv-glass.png);
 }
-.third-item::before {
+.advantages-list__item--third-item::before {
   content: url(../images/desk/adv-heart.png);
 }
