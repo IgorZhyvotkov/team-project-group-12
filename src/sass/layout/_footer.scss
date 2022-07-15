@@ -123,10 +123,15 @@
     justify-content: center;
     border-radius: 50%;
     border: none;
+    outline: none;
     width: 32px;
     height: 32px;
     background-color: var(--icons-bg-color);
     fill: var(--white-bg-color);
+    &:hover,
+    &:focus{
+      background-color: var(--accent-color);
+    }
 
     @media screen and (min-width: $tablet) {
         width: 34px;
