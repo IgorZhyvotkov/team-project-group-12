@@ -128,9 +128,13 @@
     height: 32px;
     background-color: var(--icons-bg-color);
     fill: var(--white-bg-color);
+    transition-property: background-color;
+    transition-duration:var(--btn-trans-duration);
+    transition-timing-function: var(--btn-trans-timing);
     &:hover,
     &:focus{
       background-color: var(--accent-color);
+     
     }
 
     @media screen and (min-width: $tablet) {
