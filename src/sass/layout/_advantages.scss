@@ -1,0 +1,93 @@
+.advantages {
+  margin: 0 auto;
+  width: 320px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fff5f6;
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+}
+.advantages__container {
+  margin: 0 auto;
+  padding-left: 20px;
+  @media screen and (min-width: $tablet) {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+.advantages__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.advantages-list-item__number {
+  margin-top: 16px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(41 / 36);
+  text-align: left;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 4px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 36px;
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 40px;
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    margin-bottom: 16px;
+  }
+}
+.advantages-list-item__text {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-black-color);
+  font-size: 14px;
+  line-height: 1.74;
+  @media screen and (min-width: $tablet) {
+    width: 180px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 288px;
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+.advantages-list__item:not(:last-child) {
+  margin-bottom: 32px;
+  //   margin-right: 115px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    margin-right: 4px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 115px;
+  }
+}
+
+.first-item::before {
+  content: url(../images/desk/adv-sun.png);
+}
+.second-item::before {
+  content: url(../images/desk/adv-glass.png);
+}
+.third-item::before {
+  content: url(../images/desk/adv-heart.png);
+}
