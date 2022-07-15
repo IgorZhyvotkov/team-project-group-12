@@ -1,5 +1,13 @@
 .header-hero {
 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container__header-hero {
+
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--hero-bg-color);
     height: 502px;
     position: relative;
@@ -7,37 +15,103 @@
 
     @media screen and (min-width: $tablet) {
         height: 431px;
-
     }
 
     @media screen and (min-width: $desktop) {
         min-height: 664px;
+        width: 1280px;
     }
+}
+
+.container__header {
+    padding-top: 8px;
+    padding-left: 20px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 32px;
+        padding-left: 32px;
+        display: flex;
+    }
+
+    // @media screen and (min-width: $desktop) {
+    //     padding-top: 32px;
+    //     padding-left: 32px;
+    // }
+}
+
+.container__header-logo {
+    display: flex;
+
+    width: 199px;
+    height: 50px;
 }
 
 .nav {
     display: none;
 
-    @media screen and (min-width: $tablet) {
-        display: flex;
-    }
-
     @media screen and (min-width: $desktop) {
         display: flex;
     }
+}
+
+.nav__list {
+    margin-left: 128px;
+    display: flex;
+    transition-property: color;
+    transition-duration: var(--btn-trans-duration);
+    transition-timing-function: var(--btn-trans-timing);
+    justify-content: center;
+    align-items: center;
+
+    & .nav__item+.nav__item {
+        margin-left: 35px;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__link {
+    display: block;
+    color: var(--white-bg-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: var(--btn-trans-duration);
+    transition-timing-function: var(--btn-trans-timing);
+
+    &:hover,
+    & :focus {
+        color: var(--accent-color);
+    }
+}
+
+.nav-button {
+    display: flex;
+    justify-content: end;
 
 }
 
-.container__header-hero {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
 
+.menu__open-btn {
+    display: flex;
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
 }
 
 .hero-info {
-
     display: flex;
 }
 
@@ -278,6 +352,9 @@
     color: #FFFFFF;
     left: auto;
     right: auto;
+    transition-property: color, background;
+    transition-duration: var(--btn-trans-duration);
+    transition-timing-function: var(--btn-trans-timing);
 
     @media screen and (min-width: $tablet) {
         height: 24px;
