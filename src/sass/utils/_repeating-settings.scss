@@ -11,27 +11,3 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-button {
-  cursor: pointer;
-}
-@mixin flexCentered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@mixin retina {
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    @content;
-  }
-}
-$mobile: 320px;
-$tablet: 768px;
-$desktop: 1200px;
