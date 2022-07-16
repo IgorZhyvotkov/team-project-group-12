@@ -39,19 +39,19 @@
 .about__label {
   font-family: 'Titan One';
   font-size: 18px;
-  line-height: calc(21 / 18);
+  line-height: 1.17;
   text-transform: uppercase;
   text-align: center;
   color: var(--label-color);
   margin-bottom: 15px;
   @media screen and (min-width: $tablet) {
     font-size: 26px;
-    line-height: calc(30 / 26);
+    line-height: 1.15;
     margin-bottom: 16px;
   }
   @media screen and (min-width: $desktop) {
     font-size: 30px;
-    line-height: calc(34 / 30);
+    line-height: 1.13;
     margin-bottom: 16px;
     letter-spacing: 0.04em;
   }
@@ -59,7 +59,7 @@
 .about__title {
   font-family: 'Titan One';
   font-size: 34px;
-  line-height: calc(39 / 34);
+  line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
@@ -67,12 +67,11 @@
   margin-bottom: 32px;
   @media screen and (min-width: $tablet) {
     font-size: 48px;
-    line-height: calc(55 / 48);
     margin-bottom: 40px;
   }
   @media screen and (min-width: $desktop) {
     font-size: 58px;
-    line-height: calc(66 / 58);
+    line-height: 1.14;
     letter-spacing: 0.06em;
     margin-bottom: 60px;
   }
@@ -153,30 +152,11 @@
   }
 }
 .about__btn {
-  min-width: 176px;
-  height: 44px;
-  border: none;
-  border-radius: 22px;
-  background-color: var(--white-bg-color);
-  @include flexCentered;
-  font-family: 'DM Sans';
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(18 / 14);
+  @extend .main-btn;
   color: var(--accent-color);
-  @media screen and (min-width: $tablet) {
-    font-size: 16px;
-    line-height: calc(21 / 16);
-  }
-  transition: background-color var(--btn-trans-duration) var(--btn-trans-timing);
+  background-color: var(--white-bg-color);
   &:hover,
   &:focus {
-    background: var(--button-hover-color);
-  }
-  svg {
-    fill: currentColor;
-  }
-  span {
-    margin-left: 13.62px;
+    background-color: var(--button-hover-color);
   }
 }
