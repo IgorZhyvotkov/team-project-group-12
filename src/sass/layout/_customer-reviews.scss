@@ -83,5 +83,27 @@
   }
 }
 .swiper {
-  max-width: 1000px;
+  max-width: 1200px;
+}
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 0.5);
+  background: var(--label-color);
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+
+  &:first-child {
+    background-image: url(../images/Vector.svg);
+    background-color: transparent;
+    fill: var(--products-pink-bg);
+    background-size: contain;
+    background-position: 0;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    z-index: 10;
+  }
 }
