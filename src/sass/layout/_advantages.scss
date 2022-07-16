@@ -1,16 +1,18 @@
 .advantages {
   margin: 0 auto;
   width: 320px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 0;
+  padding-bottom: 60px;
   background-color: #fff5f6;
   @media screen and (min-width: $tablet) {
     width: 768px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 0;
+    padding-bottom: 64px;
   }
   @media screen and (min-width: $desktop) {
     width: 1200px;
+    padding-bottom: 120px;
+    padding-top: 40px;
   }
 }
 .advantages__container {
@@ -40,7 +42,6 @@
   line-height: calc(41 / 36);
   text-align: left;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: var(--accent-color);
   margin-bottom: 4px;
   @media screen and (min-width: $tablet) {
