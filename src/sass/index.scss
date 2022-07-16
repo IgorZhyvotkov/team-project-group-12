@@ -5,6 +5,9 @@
 @import './utils/repeating-settings';
 @import './utils/mixins';
 
+@import './swiper/swiper-vars.scss';
+@import './swiper/swiper';
+
 @import './layout/common';
 @import './layout/hero-header';
 @import './layout/products';
