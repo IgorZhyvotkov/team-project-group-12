@@ -1,6 +1,5 @@
 .reviews-section {
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 .reviews-container {
   margin-left: auto;
@@ -19,10 +18,20 @@
   margin-bottom: 16px;
 }
 .reviews__box {
-  width: 100%;
+  max-width: 968px;
   padding: 43px 50px 17px;
   margin-bottom: 36px;
-  background-color: #fafafa;
+  background-color: var(--reviews-bg-color);
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    max-width: 520px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    max-width: 620px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .reviews__text {
   padding-left: 10px;
@@ -73,6 +82,5 @@
   }
 }
 .swiper {
-  width: 600px;
-  height: 600px;
+  max-width: 1000px;
 }
