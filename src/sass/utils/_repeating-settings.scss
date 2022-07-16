@@ -23,10 +23,10 @@ body {
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 14px;
-  line-height: calc(18 / 14);
+  line-height: 1.29;
   @media screen and (min-width: $tablet) {
     font-size: 16px;
-    line-height: calc(21 / 16);
+    line-height: 1.31;
   }
   transition: background-color var(--btn-trans-duration) var(--btn-trans-timing);
   svg {
