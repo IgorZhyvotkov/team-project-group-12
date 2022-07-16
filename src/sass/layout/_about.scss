@@ -4,10 +4,7 @@
   margin-right: auto;
   background-color: var(--light-pink-bg);
   background-image: url(../images/mob/mob-eco-bg-min.png);
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @include retina {
     background-image: url(../images/mob/mob-eco-bg@2x-min.png);
   }
   background-size: contain;
@@ -20,10 +17,7 @@
   @media screen and (min-width: $desktop) {
     width: 1200px;
     background-image: url(../images/desk/eco-bg-min.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/desk/eco-bg@2x-min.png);
     }
     background-position: 0px 236px;
@@ -32,10 +26,8 @@
 .about__container {
   @extend .container;
   padding-top: 60px;
-  padding-bottom: 40px;
   @media screen and (min-width: $tablet) {
     padding-right: 34px;
-    padding-bottom: 60px;
     padding-left: 32px;
   }
   @media screen and (min-width: $desktop) {
@@ -99,10 +91,7 @@
     max-width: 280px;
     height: 279px;
     background-image: url(../images/mob/mob-bio-min.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/mob/mob-bio@2x-min.png);
     }
     margin-bottom: 40px;
@@ -111,10 +100,7 @@
     width: 336px;
     height: 335px;
     background-image: url(../images/tab/tab-bio-min.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/tab/tab-bio@2x-min.png);
     }
     flex-shrink: 0;
@@ -124,10 +110,7 @@
     width: 501px;
     height: 501px;
     background-image: url(../images/desk/bio-min.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/desk/bio@2x-min.png);
     }
     margin-right: 99px;
@@ -174,18 +157,18 @@
   height: 44px;
   border: none;
   border-radius: 22px;
-  background: var(--white-bg-color);
+  background-color: var(--white-bg-color);
   @include flexCentered;
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 14px;
   line-height: calc(18 / 14);
-  @include flexCentered;
   color: var(--accent-color);
   @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: calc(21 / 16);
   }
+  transition: background-color var(--btn-trans-duration) var(--btn-trans-timing);
   &:hover,
   &:focus {
     background: var(--button-hover-color);
