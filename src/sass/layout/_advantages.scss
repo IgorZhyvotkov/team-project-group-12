@@ -1,12 +1,12 @@
 .advantages {
   margin: 0 auto;
   width: 320px;
-  padding-top: 0;
+  padding-top: 40px;
   padding-bottom: 60px;
   background-color: #fff5f6;
   @media screen and (min-width: $tablet) {
     width: 768px;
-    padding-top: 0;
+    padding-top: 60px;
     padding-bottom: 64px;
   }
   @media screen and (min-width: $desktop) {
@@ -44,11 +44,13 @@
   letter-spacing: 0.04em;
   color: var(--accent-color);
   margin-bottom: 4px;
+  text-transform: uppercase;
   @media screen and (min-width: $tablet) {
     margin-top: 36px;
     font-size: 48px;
     line-height: calc(55 / 48);
     margin-bottom: 13px;
+    text-transform: none;
   }
   @media screen and (min-width: $desktop) {
     margin-top: 40px;
