@@ -94,7 +94,7 @@
   position: relative;
   max-width: 280px;
   margin-bottom: 140px;
-  background-color: var(--hero-bg-color);
+  background-color: var(--products-pink-bg);
   border-radius: 24px;
   &::before {
     content: '';
@@ -106,9 +106,7 @@
     background-repeat: no-repeat;
     top: -140px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/mob/mob-cream@2x-min.png);
     }
   }
@@ -124,9 +122,7 @@
       background-repeat: no-repeat;
       top: -138px;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(../images/tab/tab-cream@2x-min.png);
       }
     }
@@ -142,9 +138,7 @@
       background-repeat: no-repeat;
       top: -261px;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(../images/desk/cream@2x-min.png);
       }
     }
@@ -165,9 +159,7 @@
     background-image: url(../images/mob/mob-coffee-min.png);
     background-repeat: no-repeat;
     top: -140px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/mob/mob-coffee@2x-min.png);
     }
   }
@@ -183,9 +175,7 @@
       background-repeat: no-repeat;
       top: -138px;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(../images/tab/tab-coffee@2x-min.png);
       }
     }
@@ -201,9 +191,7 @@
       background-repeat: no-repeat;
       top: -261px;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(../images/desk/coffee@2x-min.png);
       }
     }
@@ -212,7 +200,6 @@
 .choco-thumb {
   position: relative;
   max-width: 280px;
-  margin-bottom: 140px;
   background-color: var(--products-green-bg);
   border-radius: 24px;
   &::before {
@@ -224,9 +211,7 @@
     background-image: url(../images/mob/mob-shakers-min.png);
     background-repeat: no-repeat;
     top: -140px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/mob/mob-shakers@2x-min.png);
     }
   }
@@ -241,9 +226,7 @@
       background-repeat: no-repeat;
       top: -138px;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(../images/tab/tab-shakers@2x-min.png);
       }
     }
@@ -259,9 +242,7 @@
       background-repeat: no-repeat;
       top: -261px;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(../images/desk/shakers@2x-min.png);
       }
     }
@@ -347,9 +328,9 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  // transition-property: background-color;
-  // transition-duration: var(--duration);
-  // transition-timing-function: var(--timing-function);
+  transition-property: background-color;
+  transition-duration: var(--btn-trans-duration);
+  transition-timing-function: var(--btn-trans-timing);
   &:focus,
   &:hover {
     background-color: var(--button-hover-color);
