@@ -460,14 +460,17 @@
   }
 }
 .hero__about {
-  display: none;
+  // display: none;
 
   @media screen and (min-width: $tablet) {
-    display: flex;
+    // display: flex;
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    display: block;
   }
 }
 .hero__about-text {
@@ -495,6 +498,48 @@
     height: 78px;
     font-size: 14px;
     line-height: 1.4;
+  }
+}
+.hero__about-btn {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--white-bg-color);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    top: 415px;
+    left: 184px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    top: 544px;
+    left: 269px;
+  }
+}
+.hero__about-svg {
+  display: inline-block;
+  fill: var(--accent-color);
+
+  @media screen and (min-width: $tablet) {
+    width: 8px;
+    height: 6px;
+    margin-top: 5px;
+    margin-left: 4px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 10px;
+    height: 8px;
+    margin-top: 8px;
+    margin-left: 7px;
   }
 }
 .hero__milk {
@@ -588,48 +633,7 @@
     height: 241px;
   }
 }
-.hero__about-btn {
-  display: none;
-  position: absolute;
-  background-color: var(--white-bg-color);
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  display: none;
 
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    width: 18px;
-    height: 18px;
-    top: 354px;
-    left: 184px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    width: 26px;
-    height: 26px;
-    top: 544px;
-    left: 269px;
-  }
-}
-.hero__about-svg {
-  display: inline-block;
-  fill: var(--accent-color);
-
-  @media screen and (min-width: $tablet) {
-    width: 8px;
-    height: 6px;
-    margin-top: 5px;
-    margin-left: 4px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 10px;
-    height: 8px;
-    margin-top: 8px;
-    margin-left: 7px;
-  }
-}
 // Modal
 
 .backdrop {
