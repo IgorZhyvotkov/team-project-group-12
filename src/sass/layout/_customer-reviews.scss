@@ -1,6 +1,8 @@
 .reviews-section {
   @media screen and (max-width: 767px) {
     padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     padding-top: 60px;
@@ -31,8 +33,14 @@
 }
 .reviews__box {
   background-color: var(--reviews-bg-color);
+  @media screen and (max-width: 320px) {
+    width: 280px;
+    margin-right: 7px;
+    margin-left: 7px;
+    padding: 43px 30px 17px;
+  }
   @media screen and (max-width: 767px) {
-    max-width: 520px;
+    width: 280px;
     margin-right: 7px;
     margin-left: 7px;
     padding: 43px 50px 17px;
@@ -106,6 +114,9 @@
 }
 .swiper {
   max-width: 1200px;
+  @media screen and (max-width: 320px) {
+    width: 280px;
+  }
 }
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 0.5);
