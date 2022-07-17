@@ -82,6 +82,9 @@
 
 .products-item {
   width: 100%;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  transform-style: preserve-3d;
   @media screen and (min-width: $tablet) {
     width: calc((100% - 32px) / 3);
   }
@@ -90,8 +93,100 @@
   }
 }
 
-.pink-thumb {
+.flip {
   position: relative;
+  width: 100%;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+}
+.pink-thumb-front,
+.pink-thumb-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.pink-thumb-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+.pink-thumb-back {
+  z-index: 1;
+  transform: rotateY(-180deg);
+}
+.products-item:hover .flip {
+  transform: rotateY(-180deg);
+}
+.pink-thumb-front {
+  // position: relative;
+  max-width: 280px;
+  height: 489px;
+  margin-bottom: 140px;
+  background-color: var(--products-pink-bg);
+  border-radius: 24px;
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background-image: url(../images/mob/mob-cream-min.png);
+    background-repeat: no-repeat;
+    top: -140px;
+
+    @include retina {
+      background-image: url(../images/mob/mob-cream@2x-min.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 224px;
+    height: 473px;
+    margin-bottom: 0px;
+    &::before {
+      content: '';
+      width: 224px;
+      height: 224px;
+      background-image: url(../images/tab/tab-cream-min.png);
+      background-repeat: no-repeat;
+      top: -138px;
+
+      @include retina {
+        background-image: url(../images/tab/tab-cream@2x-min.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 368px;
+    height: 535px;
+    margin-bottom: 0px;
+    &::before {
+      content: '';
+      width: 368px;
+      height: 394px;
+      background-image: url(../images/desk/cream-min.png);
+      background-repeat: no-repeat;
+      top: -261px;
+
+      @include retina {
+        background-image: url(../images/desk/cream@2x-min.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}
+.pink-thumb-back {
+  // position: relative;
   max-width: 280px;
   height: 489px;
   margin-bottom: 140px;
