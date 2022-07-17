@@ -24,7 +24,7 @@
         </ul>
 
         <div class="nav-btn">
-          <button class="hero-btn__menu">
+          <button class="hero-btn__menu js-open-menu">
             <svg class="hero-btn__svg" width="20" height="20">
               <use href="./images/sprite.svg#icon-burger"></use>
             </svg>
@@ -204,7 +204,43 @@
         </button>
       </div>
     </div>
-    <div class="sector"></div>
-    <div class="weqe"></div>
+
+    <!-- Modal visually-hidden-->
+
+    <div class="backdrop js-menu-container">
+      <div class="modal-block">
+        <button class="modal-btn-close js-close-menu">
+          X
+          <!-- <svg class="modal-btn-close-icon" width="20" height="20">
+		            <use href="./images/sprite.svg#icon-close"></use>
+		          </svg> -->
+        </button>
+
+        <button class="modal-btn-buy">
+          Buy now
+          <svg class="modal-btn-buy-icon" width="20" height="20">
+            <use href="./images/sprite.svg#icon-small-arow"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="header-modal-list">
+        <li class="modal-list">
+          <a class="header-modal-link" href=""> Home </a>
+        </li>
+        <li class="modal-list">
+          <a class="header-modal-link" href="">About us</a>
+        </li>
+        <li class="modal-list">
+          <a class="header-modal-link" href=""> How it's made? </a>
+        </li>
+        <li class="modal-list">
+          <a class="header-modal-link" href="">Our products </a>
+        </li>
+        <li class="modal-list">
+          <a class="header-modal-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
