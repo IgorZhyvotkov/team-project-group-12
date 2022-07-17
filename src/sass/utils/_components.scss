@@ -1,0 +1,16 @@
+.main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  border-radius: 22px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  transition: color var(--btn-trans-duration) var(--btn-trans-timing),
+    background-color var(--btn-trans-duration) var(--btn-trans-timing);
+  svg {
+    fill: currentColor;
+  }
+}
