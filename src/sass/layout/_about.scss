@@ -197,3 +197,37 @@
     margin-left: 13.62px;
   }
 }
+
+// Modal
+
+.modal {
+  display: flex;
+  width: auto;
+  background-color: var(--white-bg-color);
+  border-radius: 7px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__close-btn {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal__close-icon {
+  fill: black;
+}
