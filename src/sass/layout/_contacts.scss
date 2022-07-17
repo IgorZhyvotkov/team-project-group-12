@@ -282,22 +282,10 @@
 }
 
 .contacts-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+	@extend .main-btn;
   min-width: 162px;
 
-  height: 44px;
-  border-radius: 22px;
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
   text-align: center;
-
-  transition: color var(--btn-trans-duration) var(--btn-trans-timing),
-    background-color var(--btn-trans-duration) var(--btn-trans-timing);
 
   &:hover,
   &:focus {
@@ -327,6 +315,19 @@
 
   & .contacts-buttons__icon {
     fill: currentColor;
+
+	 @media screen and (max-width: 767px) {
+		margin-left: 8px;
+	 }
+  
+	 @media screen and (min-width: $tablet) {
+		margin-left: 13.4px;
+	 }
+  
+	 @media screen and (min-width: $desktop) {
+		margin-left: 13.62px;
+	 }
+  
   }
 }
 
@@ -344,5 +345,7 @@
 
   & .contacts-buttons__icon {
     fill: currentColor;
+	margin-left: 13px;
+	
   }
 }
