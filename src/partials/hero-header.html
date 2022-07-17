@@ -1,7 +1,7 @@
 <section class="header-hero">
   <div class="container__header-hero">
     <div class="container__header">
-      <svg class="container__header-logo menu__open" width="199" height="50">
+      <svg class="container__header-logo" width="199" height="50">
         <use href="./images/sprite.svg#icon-logo"></use>
       </svg>
       <nav class="nav">
@@ -22,172 +22,186 @@
             <a href="#" class="nav__link link">Contact </a>
           </li>
         </ul>
-        <a class="nav__btn hero-btn__link" href=""
-          ><button class="hero__btn">Buy now</button></a
-        >
-      </nav>
 
-      <button
-        type="button"
-        class="menu__open-btn js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      ></button>
-    </div>
-
-    <div class="hero__container">
-      <div class="hero__milk">
-        <picture>
-          <source
-            srcset="
-              ./images/desk/hero1-min.png    1x,
-              ./images/desk/hero1@2x-min.png 2x
-            "
-            media="(min-width:1200px)"
-          />
-          <source
-            srcset="
-              ./images/tab/tab-hero1-min.png    1x,
-              ./images/tab/tab-hero1@2x-min.png 2x
-            "
-            media="(min-width:468px)"
-          />
-
-          <img
-            src="./images/desk/hero1-min.png"
-            alt="milk"
-            width="213"
-            height="216"
-          />
-        </picture>
-      </div>
-
-      <div class="hero__ice">
-        <picture class="hero__ice-bg">
-          <source
-            srcset="
-              ./images/desk/hero2-min.png    1x,
-              ./images/desk/hero2@2x-min.png 2x
-            "
-            media="(min-width:1200px)"
-          />
-          <source
-            srcset="
-              ./images/tab/tab-hero2-min.png    1x,
-              ./images/tab/tab-hero2@2x-min.png 2x
-            "
-            media="(min-width:468px)"
-          />
-          <source
-            srcset="
-              ./images/mob/mob-hero2-min.png    1x,
-              ./images/mob/mob-hero2@2x-min.png 2x
-            "
-            media="(min-width:320px)"
-          />
-          <img
-            src="./images/desk/hero2-min.png"
-            alt="icecream"
-            width="534"
-            height="534"
-          />
-        </picture>
-        <picture class="hero__ice-cream">
-          <source
-            srcset="
-              ./images/desk/hero3-min.png    1x,
-              ./images/desk/hero3@2x-min.png 2x
-            "
-            media="(min-width:1200px)"
-          />
-          <source
-            srcset="
-              ./images/tab/tab-hero3-min.png    1x,
-              ./images/tab/tab-hero3@2x-min.png 2x
-            "
-            media="(min-width:468px)"
-          />
-          <img
-            src="./images/desk/hero3-min.png"
-            alt="icecream"
-            width="236"
-            height="557"
-          />
-        </picture>
-      </div>
-
-      <div class="hero__girl">
-        <picture>
-          <source
-            srcset="
-              ./images/desk/hero4-min.png    1x,
-              ./images/desk/hero4@2x-min.png 2x
-            "
-            media="(min-width:1200px)"
-          />
-          <source
-            srcset="
-              ./images/tab/tab-hero4-min.png    1x,
-              ./images/tab/tab-hero4@2x-min.png 2x
-            "
-            media="(min-width:468px)"
-          />
-
-          <img
-            src="./images/desk/hero4-min.png"
-            alt="girl eat icecream"
-            width="304"
-            height="241"
-          />
-        </picture>
-      </div>
-
-      <div class="hero-info">
-        <div class="hero-lable">
-          <h1 class="hero-lable__title">
-            ice cream
-            <pre
-              class="hero-lable__pre"
-            ><span class="hero-lable__title-text">made with </span></pre>
-            <pre
-              class="hero-lable__pre"
-            ><span class="hero-lable__title-accent">passion</span></pre>
-          </h1>
-        </div>
-        <ul class="hero__list">
-          <li class="hero__item-cafes">
-            <h3 class="hero__item-number">16</h3>
-            <p class="hero__item-text">cafes</p>
-          </li>
-          <li class="hero__item-trucks">
-            <h3 class="hero__item-number">23</h3>
-            <p class="hero__item-text">food trucks</p>
-          </li>
-        </ul>
-        <ul class="hero-btn__list">
-          <li class="hero-btn__item">
-            <a class="hero-btn__link" href="#about"
-              ><button class="button hero__btn">Products</button></a
-            >
-          </li>
-          <li class="hero-btn__item">
-            <a class="hero-btn__link" href="#about"
-              ><button class="button hero__btn">How it's made?</button></a
-            >
-          </li>
-        </ul>
-
-        <div class="hero__about">
-          <p class="hero__about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <button class="button hero__about-btn">
-            <svg class="" width="20" height="12">
-              <use href="./images/sprite.svg#icon-right-arrow"></use>
+        <div class="nav-btn">
+          <button class="hero-btn__menu">
+            <svg class="hero-btn__svg" width="20" height="20">
+              <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button class="hero__btn light-btn nav-btn__buy nav-btn-hero">
+            Buy now
+            <svg class="hero__btn-svg" width="20" height="20">
+              <use href="./images/sprite.svg#icon-small-arow"></use>
             </svg>
           </button>
         </div>
+      </nav>
+    </div>
+
+    <div class="hero__milk">
+      <picture>
+        <source
+          srcset="
+            ./images/desk/hero1-min.png    1x,
+            ./images/desk/hero1@2x-min.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/tab/tab-hero1-min.png    1x,
+            ./images/tab/tab-hero1@2x-min.png 2x
+          "
+          media="(min-width:468px)"
+        />
+
+        <img
+          src="./images/desk/hero1-min.png"
+          alt="milk"
+          width="213"
+          height="216"
+        />
+      </picture>
+    </div>
+
+    <div class="hero__ice">
+      <picture class="hero__ice-bg">
+        <source
+          srcset="
+            ./images/desk/hero2-min.png    1x,
+            ./images/desk/hero2@2x-min.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/tab/tab-hero2-min.png    1x,
+            ./images/tab/tab-hero2@2x-min.png 2x
+          "
+          media="(min-width:468px)"
+        />
+        <source
+          srcset="
+            ./images/mob/mob-hero2-min.png    1x,
+            ./images/mob/mob-hero2@2x-min.png 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          src="./images/desk/hero2-min.png"
+          alt="icecream"
+          width="534"
+          height="534"
+        />
+      </picture>
+      <picture class="hero__ice-cream">
+        <source
+          srcset="
+            ./images/desk/hero3-min.png    1x,
+            ./images/desk/hero3@2x-min.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/tab/tab-hero3-min.png    1x,
+            ./images/tab/tab-hero3@2x-min.png 2x
+          "
+          media="(min-width:468px)"
+        />
+        <img
+          src="./images/desk/hero3-min.png"
+          alt="icecream"
+          width="236"
+          height="557"
+        />
+      </picture>
+    </div>
+
+    <div class="hero__girl">
+      <picture>
+        <source
+          srcset="
+            ./images/desk/hero4-min.png    1x,
+            ./images/desk/hero4@2x-min.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/tab/tab-hero4-min.png    1x,
+            ./images/tab/tab-hero4@2x-min.png 2x
+          "
+          media="(min-width:468px)"
+        />
+
+        <img
+          src="./images/desk/hero4-min.png"
+          alt="girl eat icecream"
+          width="304"
+          height="241"
+        />
+      </picture>
+    </div>
+
+    <div class="hero-info">
+      <div class="hero-lable">
+        <h1 class="hero-lable__title">
+          ice cream
+          <pre
+            class="hero-lable__pre"
+          ><span class="hero-lable__title-text">made with </span></pre>
+          <pre
+            class="hero-lable__pre"
+          ><span class="hero-lable__title-accent">passion</span></pre>
+        </h1>
+      </div>
+
+      <ul class="hero-btn__list">
+        <li class="hero-btn__item">
+          <a class="hero-btn__link" href="#about"
+            ><button class="dark-btn btn-list hero__btn">Products</button></a
+          >
+        </li>
+        <li class="hero-btn__item">
+          <a class="hero-btn__link" href="#about"
+            ><button class="light-btn btn-list hero__btn">
+              How it's made?
+            </button></a
+          >
+        </li>
+      </ul>
+
+      <ul class="hero__list">
+        <li class="hero__item-cafes">
+          <h3 class="hero__item-number">16</h3>
+
+          <p class="hero__item-text">cafes</p>
+        </li>
+        <li class="hero__item-cafes">
+          <h3 class="hero__item-number">23</h3>
+
+          <p class="hero__item-text">food trucks</p>
+        </li>
+      </ul>
+      <svg class="hero__circle-cafes" width="30" height="30">
+        <use href="./images/sprite.svg#icon-circle"></use>
+      </svg>
+      <svg class="hero__circle-trucks" width="30" height="30">
+        <use href="./images/sprite.svg#icon-circle"></use>
+      </svg>
+
+      <div class="hero__about">
+        <p class="hero__about-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button type="button" class="hero__about-btn">
+          <svg class="hero__about-svg" width="10" height="8">
+            <use href="./images/sprite.svg#icon-right-arrow"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
