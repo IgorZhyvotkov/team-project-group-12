@@ -93,6 +93,7 @@
 .pink-thumb {
   position: relative;
   max-width: 280px;
+  height: 489px;
   margin-bottom: 140px;
   background-color: var(--products-pink-bg);
   border-radius: 24px;
@@ -108,11 +109,15 @@
 
     @include retina {
       background-image: url(../images/mob/mob-cream@2x-min.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
 
   @media screen and (min-width: $tablet) {
     max-width: 224px;
+    height: 473px;
     margin-bottom: 0px;
     &::before {
       content: '';
@@ -124,22 +129,29 @@
 
       @include retina {
         background-image: url(../images/tab/tab-cream@2x-min.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
     }
   }
   @media screen and (min-width: $desktop) {
     max-width: 368px;
+    height: 535px;
     margin-bottom: 0px;
     &::before {
       content: '';
       width: 368px;
-      height: 100%;
+      height: 394px;
       background-image: url(../images/desk/cream-min.png);
       background-repeat: no-repeat;
       top: -261px;
 
       @include retina {
         background-image: url(../images/desk/cream@2x-min.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
     }
   }
@@ -147,6 +159,7 @@
 .beige-thumb {
   position: relative;
   max-width: 280px;
+  height: 489px;
   margin-bottom: 140px;
   background-color: var(--products-brown-bg);
   border-radius: 24px;
@@ -161,11 +174,15 @@
     top: -140px;
     @include retina {
       background-image: url(../images/mob/mob-coffee@2x-min.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
 
   @media screen and (min-width: $tablet) {
     max-width: 224px;
+    height: 473px;
     margin-bottom: 0px;
     &::before {
       content: '';
@@ -177,22 +194,29 @@
 
       @include retina {
         background-image: url(../images/tab/tab-coffee@2x-min.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
     }
   }
   @media screen and (min-width: $desktop) {
     max-width: 368px;
+    height: 535px;
     margin-bottom: 0px;
     &::before {
       content: '';
       width: 368px;
-      height: 100%;
+      height: 394px;
       background-image: url(../images/desk/coffee-min.png);
       background-repeat: no-repeat;
       top: -261px;
 
       @include retina {
         background-image: url(../images/desk/coffee@2x-min.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
     }
   }
@@ -200,6 +224,7 @@
 .choco-thumb {
   position: relative;
   max-width: 280px;
+  height: 489px;
   background-color: var(--products-green-bg);
   border-radius: 24px;
   &::before {
@@ -213,10 +238,14 @@
     top: -140px;
     @include retina {
       background-image: url(../images/mob/mob-shakers@2x-min.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
   @media screen and (min-width: $tablet) {
     max-width: 224px;
+    height: 473px;
     margin-bottom: 0px;
     &::before {
       content: '';
@@ -228,22 +257,29 @@
 
       @include retina {
         background-image: url(../images/tab/tab-shakers@2x-min.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
     }
   }
   @media screen and (min-width: $desktop) {
     max-width: 368px;
+    height: 535px;
     margin-bottom: 0px;
     &::before {
       content: '';
       width: 368px;
-      height: 100%;
+      height: 394px;
       background-image: url(../images/desk/shakers-min.png);
       background-repeat: no-repeat;
       top: -261px;
 
       @include retina {
         background-image: url(../images/desk/shakers@2x-min.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
     }
   }
@@ -318,13 +354,17 @@
   }
 }
 .products-btn {
-  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-left: 120px;
   margin-right: 120px;
+  padding: 0;
 
   background-color: var(--white-bg-color);
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -341,12 +381,10 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-bottom: 60px;
     margin-left: 164px;
     margin-right: 164px;
   }
 }
 .products-btn__icon {
-  display: flex;
   fill: var(--accent-color);
 }
