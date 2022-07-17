@@ -152,11 +152,19 @@
   }
 }
 .about__btn {
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  min-width: 176px;
   @extend .main-btn;
   color: var(--accent-color);
   background-color: var(--white-bg-color);
   &:hover,
   &:focus {
     background-color: var(--button-hover-color);
+  }
+  span {
+    margin-left: 13.62px;
   }
 }
