@@ -12,13 +12,10 @@
     width: 1200px;
   }
 }
-
 .container__header-hero {
   @extend .container;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--hero-bg-color);
   height: 502px;
   position: relative;
@@ -38,10 +35,11 @@
     padding-right: 16px;
   }
 }
-
 .container__header {
   @media screen and (max-width: 767px) {
     padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: $tablet) {
@@ -50,17 +48,21 @@
     align-items: center;
   }
 }
-
-.container__header-logo {
-  display: flex;
+.header-logo {
+  padding: 0;
+}
+.header-logo__icon {
+  display: inline-block;
   width: 199px;
   height: 50px;
 }
-
 .nav {
   display: flex;
 }
-
+.nav-btn {
+  display: flex;
+  align-items: center;
+}
 .nav__menu {
   display: none;
 
@@ -72,7 +74,6 @@
     z-index: 6;
   }
 }
-
 .nav__list {
   margin-left: 128px;
   display: flex;
@@ -96,7 +97,6 @@
     display: none;
   }
 }
-
 .nav__link {
   // display: block;
   color: var(--white-bg-color);
@@ -115,30 +115,19 @@
     color: var(--accent-color);
   }
 }
+.hero-btn__menu {
+  display: inline-flex;
+  width: 20px;
+  height: 12px;
+  background-color: transparent;
 
-.hero-btn__svg {
-  // display: flex;
-  display: inline-block;
-  fill: var(--accent-color);
-
-  @media screen and (min-width: $tablet) {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 30px;
-    // position: absolute;
-    top: 30px;
-    right: 170px;
-    //     margin-top: 5px;
-    //     margin-left: 4px;
-    // }
-
-    @media screen and (min-width: $desktop) {
-      display: none;
-    }
+  @media screen and (min-width: $desktop) {
+    display: none;
   }
 }
-
+.hero-btn__svg {
+  fill: var(--accent-color);
+}
 .hero__btn-svg {
   display: flex;
   margin-left: auto;
@@ -147,7 +136,6 @@
   height: 10px;
   margin-top: 6px;
 }
-
 .hero-lable {
   width: auto;
   position: absolute;
@@ -164,11 +152,9 @@
     top: 147px;
   }
 }
-
 .hero-lable__pre {
   margin: 0;
 }
-
 .hero-lable__title {
   margin: 0;
   font-family: 'Titan One';
@@ -191,7 +177,6 @@
 
   text-transform: uppercase;
 }
-
 .hero-lable__title-text {
   margin: 0;
   font-family: 'Titan One';
@@ -214,7 +199,6 @@
     line-height: 1.145;
   }
 }
-
 .hero-lable__title-accent {
   margin: 0;
   font-family: 'Titan One';
@@ -236,7 +220,6 @@
     line-height: 1.145;
   }
 }
-
 .hero__list {
   display: none;
 
@@ -258,7 +241,6 @@
     z-index: 6;
   }
 }
-
 .hero__item-cafes {
   display: none;
 
@@ -270,7 +252,6 @@
     display: block;
   }
 }
-
 .hero__item-number {
   margin-left: auto;
   justify-content: flex-end;
@@ -296,7 +277,6 @@
     height: 53px;
   }
 }
-
 .hero__circle-cafes {
   display: none;
   fill: var(--text-white-color);
@@ -319,7 +299,6 @@
     right: 19px;
   }
 }
-
 .hero__circle-trucks {
   display: none;
   fill: var(--text-white-color);
@@ -343,7 +322,6 @@
     right: 19px;
   }
 }
-
 .hero__item-text {
   justify-content: flex-end;
   font-family: 'DM Sans';
@@ -367,7 +345,6 @@
     line-height: calc(18 / 14);
   }
 }
-
 .hero-btn__list {
   @extend .list;
   display: flex;
@@ -384,7 +361,6 @@
     top: 308px;
   }
 }
-
 .hero-btn__item + .hero-btn__item {
   margin-left: 8px;
 
@@ -392,7 +368,6 @@
     margin-left: 12px;
   }
 }
-
 .nav-btn {
   display: flex;
   margin-left: auto;
@@ -407,7 +382,6 @@
     display: flex;
   }
 }
-
 .nav-btn-hero {
   display: inline-block;
   margin-left: auto;
@@ -418,13 +392,11 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
 }
-
 .btn-list {
   font-weight: 400;
   font-size: 8px;
   line-height: calc(10 / 8);
 }
-
 .hero__btn {
   @extend button;
   padding: 11px 23px;
@@ -449,7 +421,6 @@
     line-height: calc(18 / 14);
   }
 }
-
 .nav-btn__buy {
   padding: 0px 37px;
   display: none;
@@ -468,7 +439,6 @@
     display: flex;
   }
 }
-
 .dark-btn {
   background: var(--accent-color);
   color: var(--text-white-color);
@@ -479,7 +449,6 @@
     color: var(--accent-color);
   }
 }
-
 .light-btn {
   background: var(--white-bg-color);
   color: var(--accent-color);
@@ -490,7 +459,6 @@
     color: var(--accent-color);
   }
 }
-
 .hero__about {
   display: none;
 
@@ -502,7 +470,6 @@
     display: flex;
   }
 }
-
 .hero__about-text {
   display: none;
   position: absolute;
@@ -530,7 +497,6 @@
     line-height: 1.4;
   }
 }
-
 .hero__milk {
   display: none;
 
@@ -552,7 +518,6 @@
     left: 56px;
   }
 }
-
 .hero__ice-cream {
   position: absolute;
   bottom: 0;
@@ -576,7 +541,6 @@
     right: 368px;
   }
 }
-
 .hero__ice-bg {
   width: 284px;
   height: 344px;
@@ -600,7 +564,6 @@
     // left: auto;
   }
 }
-
 .hero__girl {
   display: none;
   bottom: 0;
@@ -625,7 +588,6 @@
     height: 241px;
   }
 }
-
 .hero__about-btn {
   display: none;
   position: absolute;
@@ -650,7 +612,6 @@
     left: 269px;
   }
 }
-
 .hero__about-svg {
   display: inline-block;
   fill: var(--accent-color);
@@ -669,7 +630,6 @@
     margin-left: 7px;
   }
 }
-
 // Modal
 
 .backdrop {
@@ -684,8 +644,11 @@
   position: fixed;
   flex-direction: column;
   background-color: #e17992;
+  display: none;
 }
-
+.is-open {
+  display: block;
+}
 .modal-block {
   position: relative;
   display: flex;
@@ -718,6 +681,7 @@
   right: 35;
   background-color: transparent;
   color: #ffffff;
+  border-radius: 50%;
 }
 
 .modal-btn-buy-icon {
