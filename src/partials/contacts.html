@@ -147,12 +147,17 @@
         />
       </svg>
       <p class="modal__title contacts__modal-title">Our Locations</p>
-	<div class="modal__map-container">
-		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iATDu0anOQQzxjg5dpZGB0x5UCefMso&ehbc=2E312F" width="640" height="480" frameborder="0"></iframe>
-
-	</div>
+      <div class="modal__map-container">
+        <iframe
+          src="https://www.google.com/maps/d/u/0/embed?mid=1iATDu0anOQQzxjg5dpZGB0x5UCefMso&ehbc=2E312F"
+          width="640"
+          height="480"
+          frameborder="0"
+        ></iframe>
+      </div>
     </div>
 
+    <!-- --------------------------FRANCHISE MODAL-------------------------- -->
     <div class="modal" data-modal="2">
       <svg
         class="modal__cross js-modal-close"
@@ -163,7 +168,108 @@
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
         />
       </svg>
-      <p class="modal__title">Заголовок окна 2</p>
+      <h2 class="modal__title--franchise">
+        If you want to become part of our family,<br />
+        please, fill the form below
+      </h2>
+      <form autocomplete="off">
+        <div class="modal__form-field--franchise">
+          <label class="modal__field-name--franchise" for="name"
+            >Your Name</label
+          >
+          <div class="modal__input-wrap--franchise">
+            <input
+              class="modal__form-input--franchise"
+              type="text"
+              name="name"
+              id="name"
+              placeholder=" "
+              required
+            />
+            <svg class="modal__input-icon--franchise" width="18" height="18">
+              <use href="./images/sprite.svg#icon-person-name"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__form-field--franchise">
+          <label class="modal__field-name--franchise" for="surname"
+            >Your Family Name</label
+          >
+          <div class="modal__input-wrap--franchise">
+            <input
+              class="modal__form-input--franchise"
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder=" "
+              required
+            />
+            <svg class="modal__input-icon--franchise" width="18" height="18">
+              <use href="./images/sprite.svg#icon-person-name"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__form-field--franchise">
+          <label class="modal__field-name--franchise" for="tel"
+            >Your Phone No.</label
+          >
+          <div class="modal__input-wrap--franchise">
+            <input
+              class="modal__form-input--franchise"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder=" "
+              required
+            />
+            <svg class="modal__input-icon--franchise" width="18" height="18">
+              <use href="./images/sprite.svg#icon-person-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__form-field--franchise">
+          <label class="modal__field-name--franchise" for="email"
+            >Your E-mail Address</label
+          >
+          <div class="modal__input-wrap--franchise">
+            <input
+              class="modal__form-input--franchise"
+              type="email"
+              name="email"
+              id="email"
+              placeholder=" "
+              required
+            />
+            <svg class="modal__input-icon--franchise" width="18" height="18">
+              <use href="./images/sprite.svg#icon-person-email"></use>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <input
+            class="modal__modal-check--franchise visually-hidden"
+            type="checkbox"
+            name="agree"
+            value="true"
+            id="agree"
+            required
+          />
+          <label class="modal__agree-text--franchise" for="agree">
+            <span class="modal__check-block--franchise"
+              ><svg class="modal__check-icon--franchise" width="15" height="14">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <span
+              >I've read
+              <a class="modal__agreement--franchise" href=""
+                >Franchise Agreement</a
+              ></span
+            >
+          </label>
+        </div>
+        <button class="modal__send-btn--franchise">Send</button>
+      </form>
     </div>
   </div>
 </section>
