@@ -1,21 +1,13 @@
 .gallery {
   margin: 0 auto;
   padding: 0;
-  width: 320px;
+  max-width: 1600px;
 
   background-image: linear-gradient(
     to bottom,
     var(--light-pink-bg) 17%,
     var(--white-bg-color) 17%
   );
-
-  @media screen and (min-width: $tablet) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 1200px;
-  }
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     background-image: linear-gradient(
