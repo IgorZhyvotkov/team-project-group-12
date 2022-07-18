@@ -713,6 +713,7 @@
     max-width: 254px;
     left: auto;
     right: 0;
+    transition: transform 250ms ease-in-out;
   }
 }
 
@@ -759,7 +760,6 @@
   width: 14px;
   height: 14px;
   fill: var(--text-white-color);
-  background-color: var(--hero-bg-color);
 }
 
 .modal-btn-buy-icon {
