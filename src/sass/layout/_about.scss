@@ -183,3 +183,18 @@
     margin-left: 13.62px;
   }
 }
+
+// Modal
+
+.modal {
+  min-width: 320px;
+  background-color: #fff;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  border: 2 solid #e17992;
+}
