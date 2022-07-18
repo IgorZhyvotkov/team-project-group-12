@@ -709,6 +709,11 @@
   flex-direction: column;
   background-color: #e17992;
   display: none;
+  @media screen and (min-width: $tablet) {
+    max-width: 254px;
+    left: auto;
+    right: 0;
+  }
 }
 
 .is-open {
