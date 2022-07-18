@@ -193,10 +193,20 @@
   background-color: #fff;
   border-radius: 8px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px;
   display: flex;
   position: fixed;
-  border: 2 solid #e17992;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: 0px 0px 10px 15px rgba(221, 113, 221, 0.3);
+  background-image: url(../images/mob/modal-about-cow.png);
+  @media screen and (min-width: 767px) {
+    background-image: url(../images/mob/modal-about-cow.png);
+  }
+  @include retina {
+    background-image: url(../images/mob/modal-about-cow-x2.png);
+  }
 }
