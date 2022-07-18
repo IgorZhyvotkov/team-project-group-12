@@ -14,7 +14,6 @@
   @media screen and (min-width: $tablet) {
     width: 768px;
   }
-
   @media screen and (min-width: $desktop) {
     width: 1200px;
   }
@@ -74,7 +73,6 @@
     letter-spacing: 0.06em;
   }
 }
-
 .footer__social-media {
   display: flex;
   flex-direction: column;
@@ -137,13 +135,6 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.83;
-  transition-property: transform scale(1);
-  transition-duration: var(--btn-trans-duration);
-  transition-timing-function: var(--btn-trans-timing);
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-  }
   @media screen and (min-width: $tablet) {
     font-weight: 700;
     font-size: 14px;
@@ -161,6 +152,10 @@
 .footer__tel-link-accent {
   color: var(--accent-color);
   margin-left: 5px;
+  &:hover,
+  &:focus {
+    color: var(--text-grey-color);
+  }
 }
 .footer__copyright {
   @extend .link;
