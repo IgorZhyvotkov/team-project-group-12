@@ -236,7 +236,11 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+<<<<<<< Updated upstream
         <button class="modal-btn-buy">
+=======
+        <button class="modal-btn-buy js-open-menu">
+>>>>>>> Stashed changes
           Buy now
           <svg class="modal-btn-buy-icon" width="20" height="20">
             <use href="./images/sprite.svg#icon-small-arow"></use>
@@ -263,7 +267,7 @@
       </ul>
     </div>
 
-    <div class="modal" data-modal="4">
+    <div class="modal modal-buy-now-headder" data-modal="4">
       <svg
         class="modal__cross js-modal-close"
         xmlns="http://www.w3.org/2000/svg"
@@ -273,7 +277,28 @@
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
         />
       </svg>
-      <p class="modal__title">Заголовок окна 4</p>
+      <form class="form-modal">
+        <p class="modal__title modal-headder-title">Leave your contacts</p>
+        <div class="headder-modal-contacts">
+          <label class="label-item">
+            <span class="label-name">Name</span>
+            <input class="headder-input-name" type="text" />
+          </label>
+          <label class="label-item">
+            <span class="label-name"> Phone number</span>
+            <input class="headder-input-name" type="text" />
+          </label>
+          <label class="label-item">
+            <span class="label-name"> Comment</span>
+            <textarea
+              class="label-comment"
+              name=""
+              id=""
+              placeholder="Add your comment"
+            ></textarea>
+          </label>
+        </div>
+      </form>
     </div>
   </div>
 </section>
