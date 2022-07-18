@@ -93,7 +93,7 @@
   align-items: center;
   z-index: 6;
 
-  & .nav__item+.nav__item {
+  & .nav__item + .nav__item {
     margin-left: 35px;
   }
 
@@ -259,7 +259,6 @@
     right: 34px;
     z-index: 6;
   }
-
 }
 
 .hero__item-cafes {
@@ -346,7 +345,6 @@
     top: 254px;
     right: 19px;
   }
-
 }
 
 .hero__item-text {
@@ -390,7 +388,7 @@
   }
 }
 
-.hero-btn__item+.hero-btn__item {
+.hero-btn__item + .hero-btn__item {
   margin-left: 8px;
 
   @media screen and (min-width: $desktop) {
@@ -424,7 +422,6 @@
   letter-spacing: 0.02em;
 }
 
-
 .hero__btn {
   @extend button;
   padding: 7px 23px;
@@ -443,7 +440,6 @@
   @media screen and (min-width: $tablet) {
     height: 40px;
     padding: 7px 23px;
-
   }
 
   @media screen and (min-width: $desktop) {
@@ -473,7 +469,6 @@
   transition-timing-function: var(--btn-trans-timing);
 
   @media screen and (min-width: $tablet) {
-
     display: flex;
     margin-left: 32px;
   }
@@ -713,6 +708,11 @@
   flex-direction: column;
   background-color: #e17992;
   display: none;
+  @media screen and (min-width: $tablet) {
+    max-width: 254px;
+    left: auto;
+    right: 0;
+  }
 }
 
 .is-open {
