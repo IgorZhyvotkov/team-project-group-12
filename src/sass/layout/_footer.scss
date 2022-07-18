@@ -4,10 +4,10 @@
   margin-left: auto;
   margin-right: auto;
   background-color: var(--light-pink-bg);
-  position: relative;
 }
 .footer__content {
   @extend .container;
+  position: relative;
   @media screen and (min-width: $mobile) and (max-width: 767px) {
     max-width: 480px;
   }
