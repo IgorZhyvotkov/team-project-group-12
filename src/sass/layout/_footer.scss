@@ -7,13 +7,16 @@
 }
 
 .footer__content {
-  position: relative;
   @extend .container;
-  // width: 320px;
+  position: relative;
 
-  //   @media screen and (min-width: $tablet) {
-  //     width: 768px;
-  //   }
+  @media screen and (min-width: $mobile)and (max-width: 767px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
 
   @media screen and (min-width: $desktop) {
     width: 1200px;
@@ -23,19 +26,12 @@
 .footer__flex-wrap {
   margin-bottom: 40px;
 
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (max-width: 767px) {
-    width: 280px;
-  }
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
-    width: 736px;
   }
 
   @media screen and (min-width: $desktop) {
-    display: inline-block;
     margin-bottom: 60px;
   }
 }
@@ -95,14 +91,14 @@
   display: flex;
   flex-direction: column;
   text-align: right;
+
   @media screen and (min-width: $tablet) {
     align-self: end;
     margin-bottom: 19px;
   }
+
   @media screen and (min-width: $desktop) {
-    position: absolute;
-    right: 16px;
-    bottom: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -140,6 +136,7 @@
   transition-property: background-color, transform scale(1);
   transition-duration: var(--btn-trans-duration);
   transition-timing-function: var(--btn-trans-timing);
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -166,6 +163,7 @@
   transition-property: transform scale(1);
   transition-duration: var(--btn-trans-duration);
   transition-timing-function: var(--btn-trans-timing);
+
   &:hover,
   &:focus {
     transform: scale(1.1);
@@ -192,18 +190,6 @@
   margin-left: 5px;
 }
 
-// .footer__copyright-border {
-//     min-width: 320px;
-//     max-width: 1167px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     border-top: 1px solid #E1E1E1;
-
-//     // @media screen and (min-width: $desktop) {
-//     //     max-width: 1167px;
-//     // }
-// }
-
 .footer__copyright {
   @extend .link;
   display: block;
@@ -226,6 +212,7 @@
     line-height: 1.86;
     letter-spacing: 0.02em;
   }
+
   @media screen and (min-width: $desktop) {
     width: 1167px;
     padding-top: 7px;
@@ -234,19 +221,19 @@
     letter-spacing: 0.02em;
   }
 }
+
 .footer-border {
   display: block;
-  width: 100%;
   border-top: 1px solid #e1e1e1;
+  width: 100%;
   position: absolute;
-
   left: 0;
-  @media screen and (max-width: 767px) {
-    bottom: 61px;
-  }
+  bottom: 61px;
+
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     bottom: 42px;
   }
+
   @media screen and (min-width: $desktop) {
     bottom: 37px;
     width: 1168px;
