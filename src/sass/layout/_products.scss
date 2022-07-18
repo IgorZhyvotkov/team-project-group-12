@@ -13,14 +13,8 @@
   @extend .container;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: $tablet) {
-    padding-right: 32px;
-    padding-left: 32px;
-  }
   @media screen and (min-width: $desktop) {
     padding-top: 61px;
-    padding-right: 16px;
-    padding-left: 16px;
   }
 }
 .products__label {
@@ -79,49 +73,14 @@
     gap: 32px;
   }
 }
-
 .products-item {
   width: 100%;
-
   @media screen and (min-width: $tablet) {
     width: calc((100% - 32px) / 3);
   }
   @media screen and (min-width: $desktop) {
     width: calc((100% - 64px) / 3);
   }
-}
-
-.flip {
-  position: relative;
-  width: 100%;
-  transition: all 1s linear;
-  transform-style: preserve-3d;
-}
-.front,
-.back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-.front {
-  z-index: 2;
-  opacity: 1;
-  transform: rotateY(0deg);
-  backface-visibility: hidden;
-}
-.back {
-  z-index: 1;
-  opacity: 0;
-  transform: rotateY(-180deg);
-}
-.products-btn:hover .back {
-  opacity: 1;
-  transition: opacity 1s linear;
-  -webkit-transition: opacity 1s linear;
-
-  transform: rotateY(-180deg);
 }
 .pink-thumb {
   position: relative;
@@ -189,71 +148,6 @@
     }
   }
 }
-// .pink-thumb-back {
-//   max-width: 280px;
-//   height: 489px;
-//   margin-bottom: 140px;
-//   background-color: var(--products-pink-bg);
-//   border-radius: 24px;
-//   &::before {
-//     content: '';
-//     display: inline-block;
-//     position: absolute;
-//     width: 280px;
-//     height: 280px;
-//     background-image: url(../images/mob/mob-cream-min.png);
-//     background-repeat: no-repeat;
-//     top: -140px;
-
-//     @include retina {
-//       background-image: url(../images/mob/mob-cream@2x-min.png);
-//       background-repeat: no-repeat;
-//       background-position: center;
-//       background-size: cover;
-//     }
-//   }
-
-//   @media screen and (min-width: $tablet) {
-//     max-width: 224px;
-//     height: 473px;
-//     margin-bottom: 0px;
-//     &::before {
-//       content: '';
-//       width: 224px;
-//       height: 224px;
-//       background-image: url(../images/tab/tab-cream-min.png);
-//       background-repeat: no-repeat;
-//       top: -138px;
-
-//       @include retina {
-//         background-image: url(../images/tab/tab-cream@2x-min.png);
-//         background-repeat: no-repeat;
-//         background-position: center;
-//         background-size: cover;
-//       }
-//     }
-//   }
-//   @media screen and (min-width: $desktop) {
-//     max-width: 368px;
-//     height: 535px;
-//     margin-bottom: 0px;
-//     &::before {
-//       content: '';
-//       width: 368px;
-//       height: 394px;
-//       background-image: url(../images/desk/cream-min.png);
-//       background-repeat: no-repeat;
-//       top: -261px;
-
-//       @include retina {
-//         background-image: url(../images/desk/cream@2x-min.png);
-//         background-repeat: no-repeat;
-//         background-position: center;
-//         background-size: cover;
-//       }
-//     }
-//   }
-// }
 .beige-thumb {
   position: relative;
   max-width: 280px;
@@ -382,6 +276,36 @@
     }
   }
 }
+.products-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--white-bg-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: var(--btn-trans-duration);
+  transition-timing-function: var(--btn-trans-timing);
+
+  @media screen and (min-width: $desktop) {
+    bottom: 60px;
+  }
+  &__icon {
+    fill: var(--accent-color);
+  }
+  &:focus,
+  &:hover {
+    background-color: var(--button-hover-color);
+  }
+}
+
 .products-item__title {
   position: relative;
   padding-top: 160px;
@@ -450,39 +374,4 @@
     font-size: 16px;
     line-height: 1.76;
   }
-}
-.products-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-left: 120px;
-  margin-right: 120px;
-  padding: 0;
-
-  background-color: var(--white-bg-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-
-  transition-property: background-color;
-  transition-duration: var(--btn-trans-duration);
-  transition-timing-function: var(--btn-trans-timing);
-  &:focus,
-  &:hover {
-    background-color: var(--button-hover-color);
-  }
-  @media screen and (min-width: $tablet) {
-    margin-left: 92px;
-    margin-right: 92px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-left: 164px;
-    margin-right: 164px;
-  }
-}
-.products-btn__icon {
-  fill: var(--accent-color);
 }
