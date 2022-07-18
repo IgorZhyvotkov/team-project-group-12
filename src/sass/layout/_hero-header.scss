@@ -91,7 +91,7 @@
   align-items: center;
   z-index: 6;
 
-  & .nav__item+.nav__item {
+  & .nav__item + .nav__item {
     margin-left: 35px;
   }
 
@@ -387,7 +387,7 @@
   }
 }
 
-.hero-btn__item+.hero-btn__item {
+.hero-btn__item + .hero-btn__item {
   margin-left: 8px;
 
   @media screen and (min-width: $desktop) {
@@ -797,4 +797,60 @@
 .header-modal-link:focus,
 .header-modal-link:hover {
   color: #d41443;
+}
+
+// Modal-headder-buy-now
+
+.modal-buy-now-headder {
+  // background-color: ;
+  box-shadow: 0px 0px 10px 15px rgba(221, 113, 221, 0.3);
+}
+
+.modal-headder-title {
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 8px;
+  font-family: Titan One;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.label-item {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.label-name {
+  letter-spacing: 0.04em;
+  color: #d41443;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  padding-left: 4px;
+}
+
+.headder-input-name {
+  width: 100%;
+  border-radius: 22px;
+  border: 1px solid #d41443;
+  border-radius: 22px;
+}
+
+.label-comment {
+  width: 100%;
+  height: 100px;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.15;
+  width: 100%;
+  border-radius: 22px;
+  border: 1px solid #d41443;
+  border-radius: 22px;
+  resize: none;
 }
