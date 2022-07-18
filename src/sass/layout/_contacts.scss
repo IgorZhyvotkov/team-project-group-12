@@ -17,7 +17,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: 1200px;
+    max-width: 1600px;
     background: linear-gradient(
       to top,
       var(--light-pink-bg) 75%,
@@ -282,7 +282,7 @@
 }
 
 .contacts-btn {
-	@extend .main-btn;
+  @extend .main-btn;
   min-width: 162px;
 
   text-align: center;
@@ -316,18 +316,17 @@
   & .contacts-buttons__icon {
     fill: currentColor;
 
-	 @media screen and (max-width: 767px) {
-		margin-left: 8px;
-	 }
-  
-	 @media screen and (min-width: $tablet) {
-		margin-left: 13.4px;
-	 }
-  
-	 @media screen and (min-width: $desktop) {
-		margin-left: 13.62px;
-	 }
-  
+    @media screen and (max-width: 767px) {
+      margin-left: 8px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin-left: 13.4px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 13.62px;
+    }
   }
 }
 
@@ -345,7 +344,6 @@
 
   & .contacts-buttons__icon {
     fill: currentColor;
-	margin-left: 13px;
-	
+    margin-left: 13px;
   }
 }
