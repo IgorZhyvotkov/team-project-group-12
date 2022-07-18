@@ -1,36 +1,51 @@
 .about {
-  width: 320px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--light-pink-bg);
-  background-image: url(../images/mob/mob-eco-bg-min.png);
+  background-image: url(../images/desk/eco-bg-min.png);
   @include retina {
-    background-image: url(../images/mob/mob-eco-bg@2x-min.png);
+    background-image: url(../images/desk/eco-bg@2x-min.png);
   }
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0px 594px;
+  background-position: 0 77%;
   @media screen and (min-width: $tablet) {
-    width: 768px;
     background-image: none;
   }
   @media screen and (min-width: $desktop) {
-    width: 1200px;
     background-image: url(../images/desk/eco-bg-min.png);
     @include retina {
       background-image: url(../images/desk/eco-bg@2x-min.png);
     }
     background-position: 0px 236px;
   }
+  // @media screen and (max-width: 767px) {
+  //   min-width: 320px;
+  // }
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 64px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 120px;
+    padding-top: 40px;
+  }
 }
 .about__container {
   @extend .container;
+
   padding-top: 60px;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
   @media screen and (min-width: $tablet) {
+    width: 768px;
     padding-right: 34px;
     padding-left: 32px;
   }
   @media screen and (min-width: $desktop) {
+    width: 1200px;
     padding-right: 121px;
     padding-bottom: 20px;
     padding-left: 16px;

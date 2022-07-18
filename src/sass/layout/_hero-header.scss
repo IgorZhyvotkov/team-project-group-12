@@ -1,22 +1,12 @@
 .header-hero {
-  // min-width: 320px;
-  width: 320px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-
-  @media screen and (min-width: $tablet) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 1200px;
-  }
+  background-color: var(--hero-bg-color);
 }
 .container__header-hero {
   @extend .container;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: var(--hero-bg-color);
+
   height: 502px;
   position: relative;
   max-width: 1280px;
@@ -24,15 +14,11 @@
   @media screen and (min-width: $tablet) {
     width: 768px;
     height: 480px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
   @media screen and (min-width: $desktop) {
     min-height: 664px;
     width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 .container__header {
