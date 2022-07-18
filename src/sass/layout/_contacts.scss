@@ -396,3 +396,157 @@
 }
 
 /*--------------------------FRANCHISE MODAL--------------------------*/
+.modal--franchise {
+  top: 50%;
+  left: 50%;
+  width: 310px;
+  max-width: 95vw;
+  height: auto;
+  max-height: 95vh;
+  overflow-y: auto;
+  padding: 40px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.17;
+  background: var(--text-white-color);
+  border-radius: 4px;
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+.modal__title--franchise {
+  display: block;
+  margin-bottom: 16px;
+  font-family: var(--second-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--accent-color);
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+.modal__form-field--franchise {
+  display: flex;
+  flex-direction: column;
+  & + & {
+    margin-top: 10px;
+  }
+  input {
+    width: 100%;
+    padding: 11px 12px 11px 42px;
+  }
+  &:hover input,
+  &:focus input,
+  &:focus-within input {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
+}
+.modal__field-name--franchise {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--mobile-menu-color);
+}
+.modal__input-wrap--franchise {
+  position: relative;
+}
+.modal__form-input--franchise {
+  border: 1px solid var(--mobile-menu-color);
+  border-radius: 4px;
+  transition: border var(--btn-trans-duration) var(--btn-trans-timing);
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  @media screen and (min-width: $desktop) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  &:hover,
+  &:focus,
+  &:focus-within {
+    border: 1px solid var(--accent-color);
+  }
+  &::placeholder {
+    font-style: inherit;
+    color: var(--text-grey-color);
+  }
+}
+.modal__input-icon--franchise {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--label-color);
+  transition: fill var(--btn-trans-duration) var(--btn-trans-timing);
+  .modal__form-field--franchise:hover &,
+  .modal__form-field--franchise:focus &,
+  .modal__form-field--franchise:focus-within & {
+    fill: var(--accent-color);
+  }
+}
+.modal__agree-text--franchise {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--mobile-menu-color);
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+.modal__check-block--franchise {
+  margin-right: 7px;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 1.5px solid var(--mobile-menu-color);
+  border-radius: 2px;
+  transition: background-color var(--btn-trans-duration) var(--btn-trans-timing),
+    border var(--btn-trans-duration) var(--btn-trans-timing);
+  .modal__check-block--franchise:checked + .modal__agree-text--franchise & {
+    background-color: var(--mobile-menu-color);
+    border: 1.5px solid transparent;
+  }
+}
+.modal__check-icon--franchise {
+  fill: transparent;
+  transition: fll var(--btn-trans-duration) var(--btn-trans-timing);
+  .modal__check-block--franchise:checked + .modal__agree-text--franchise & {
+    fill: var(--white-bg-color);
+  }
+}
+.modal__agreement--franchise {
+  font: inherit;
+  text-decoration: underline;
+  color: var(--text-grey-color);
+  transition: color var(--btn-trans-duration) var(--btn-trans-timing);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.modal__send-btn--franchise {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  min-width: 176px;
+  @extend .main-btn;
+  color: var(--accent-color);
+  background-color: var(--button-hover-color);
+  &:hover,
+  &:focus {
+    color: var(--text-white-color);
+    background-color: var(--accent-color);
+  }
+}
