@@ -20,9 +20,9 @@
     }
     background-position: 0px 236px;
   }
-  // @media screen and (max-width: 767px) {
-  //   min-width: 320px;
-  // }
+  @media screen and (max-width: 767px) {
+    min-width: 320px;
+  }
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
     padding-bottom: 64px;
@@ -108,6 +108,8 @@
     @include retina {
       background-image: url(../images/mob/mob-bio@2x-min.png);
     }
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 40px;
   }
   @media screen and (min-width: $tablet) {
