@@ -489,42 +489,7 @@
     fill: var(--accent-color);
   }
 }
-.modal__agree-text--franchise {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.modal__check-block--franchise {
-  display: flex;
-  margin-right: 7px;
-  width: 16px;
-  height: 16px;
-  background-color: transparent;
-  border: 1.5px solid var(--mobile-menu-color);
-  border-radius: 2px;
-  transition: background-color var(--btn-trans-duration) var(--btn-trans-timing),
-    border var(--btn-trans-duration) var(--btn-trans-timing);
-  // .modal__check-block--franchise:checked + .modal__agree-text--franchise & {
-  //   background-color: var(--mobile-menu-color);
-  //   border: 1.5px solid transparent;
-  // }
-}
-.modal__check-icon--franchise {
-  // fill: transparent;
-  transition: fll var(--btn-trans-duration) var(--btn-trans-timing);
-  // .modal__check-block--franchise:checked + .modal__agree-text--franchise & {
-  //   fill: var(--white-bg-color);
-  // }
-}
-.modal__agreement--franchise {
-  color: var(--text-grey-color);
-  transition: color var(--btn-trans-duration) var(--btn-trans-timing);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    outline: none;
-  }
-}
+
 .modal__send-btn--franchise {
   display: block;
   margin-left: auto;
@@ -545,10 +510,10 @@
     outline: none;
   }
 }
-// ssasadasd
 .check-label {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 .check-label__checkbox {
@@ -581,16 +546,6 @@
     background-size var(--transition-option),
     background-origin var(--transition-option),
     background-repeat var(--transition-option);
-
-  @media screen and (max-width: 767px) {
-    margin-left: 3px;
-    width: 22px;
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    margin-left: 4px;
-    width: 18px;
-  }
 }
 .check-label__checkbox:checked + .check-label__icon {
   border-color: var(--accent-color);
