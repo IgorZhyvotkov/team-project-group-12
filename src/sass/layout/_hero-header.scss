@@ -555,6 +555,30 @@
   }
 }
 
+.hero__about-text-animation {
+	display: none;
+}
+
+.hero__about.is-hidden .hero__about-text-animation.is-hidden {
+	@media screen and (min-width: $tablet) {
+		display: block;
+	 }
+}
+
+.text-animation {
+	@extend .hero__about-text;
+	height: 18px;
+
+	@media screen and (min-width: $tablet) {
+		bottom: 63px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			height: 36px;
+			bottom: 74px;
+		}
+}
+
 .hero__about-btn {
   display: none;
   position: absolute;
@@ -562,6 +586,8 @@
   background-color: var(--white-bg-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: background-color var(--btn-trans-timing) var(--btn-trans-duration);
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -578,6 +604,31 @@
     top: 544px;
     left: 269px;
   }
+
+  &:hover,
+  &:focus {
+	background-color: var(--button-hover-color);
+  }
+}
+
+.hero__about.is-hidden .hero__about-btn {
+	transition: background-color var(--btn-trans-timing) var(--btn-trans-duration);
+
+	&:hover,
+	&:focus {
+	 background-color: var(--button-hover-color);
+	}
+
+	@media screen and (min-width: $tablet) {
+		top: 355px;
+	 }
+  
+	 @media screen and (min-width: $desktop) {
+		top: 600px;
+	 }
+
+	
+
 }
 
 .hero__about-svg {
