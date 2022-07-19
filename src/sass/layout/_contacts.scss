@@ -573,7 +573,7 @@
   width: 16px;
   height: 15px;
   margin-right: 8.23px;
-  border: 2px solid #2a2a2a;
+  border: 1px solid var(--accent-color);
   border-radius: 2px;
   transition: border-color var(--transition-option),
     background-color var(--transition-option),
@@ -582,11 +582,12 @@
     background-origin var(--transition-option),
     background-repeat var(--transition-option);
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     margin-left: 3px;
-    width: 25px;
+    width: 22px;
   }
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-left: 4px;
     width: 18px;
   }
