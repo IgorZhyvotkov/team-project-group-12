@@ -189,12 +189,14 @@
 /*--------------------------READ MORE MODAL--------------------------*/
 
 .about--modal {
+  z-index: 100;
   top: 50%;
   left: 50%;
-  min-width: 315px;
-  max-width: 450px;
-  height: 95vh;
-  overflow: auto;
+  width: 360px;
+  max-width: 95vw;
+  height: auto;
+  max-height: 95vh;
+  overflow-y: auto;
   box-shadow: 8px 8px 6px 2px rgba(0, 0, 0, 0.3);
   background-color: var(--light-pink-bg);
   padding-top: 40px;
@@ -203,7 +205,6 @@
   padding-left: 20px;
   border-radius: 25px;
   @media screen and (min-width: $tablet) {
-    max-width: none;
     width: 650px;
   }
   @media screen and (min-width: $desktop) {
@@ -225,7 +226,7 @@
   @media screen and (min-width: $desktop) {
     font-size: 30px;
     line-height: 1.13;
-    margin-bottom: 16px;
+    margin-bottom: 35px;
     letter-spacing: 0.04em;
   }
 }

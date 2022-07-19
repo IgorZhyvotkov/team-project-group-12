@@ -556,27 +556,27 @@
 }
 
 .hero__about-text-animation {
-	display: none;
+  display: none;
 }
 
 .hero__about.is-hidden .hero__about-text-animation.is-hidden {
-	@media screen and (min-width: $tablet) {
-		display: block;
-	 }
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
 }
 
 .text-animation {
-	@extend .hero__about-text;
-	height: 18px;
+  @extend .hero__about-text;
+  height: 18px;
 
-	@media screen and (min-width: $tablet) {
-		bottom: 63px;
-		}
+  @media screen and (min-width: $tablet) {
+    bottom: 63px;
+  }
 
-		@media screen and (min-width: $desktop) {
-			height: 36px;
-			bottom: 74px;
-		}
+  @media screen and (min-width: $desktop) {
+    height: 36px;
+    bottom: 74px;
+  }
 }
 
 .hero__about-btn {
@@ -607,28 +607,25 @@
 
   &:hover,
   &:focus {
-	background-color: var(--button-hover-color);
+    background-color: var(--button-hover-color);
   }
 }
 
 .hero__about.is-hidden .hero__about-btn {
-	transition: background-color var(--btn-trans-timing) var(--btn-trans-duration);
+  transition: background-color var(--btn-trans-timing) var(--btn-trans-duration);
 
-	&:hover,
-	&:focus {
-	 background-color: var(--button-hover-color);
-	}
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
 
-	@media screen and (min-width: $tablet) {
-		top: 355px;
-	 }
-  
-	 @media screen and (min-width: $desktop) {
-		top: 600px;
-	 }
+  @media screen and (min-width: $tablet) {
+    top: 355px;
+  }
 
-	
-
+  @media screen and (min-width: $desktop) {
+    top: 600px;
+  }
 }
 
 .hero__about-svg {
@@ -884,12 +881,16 @@
 
 .modal-buy-now-header {
   box-shadow: 8px 8px 6px 2px rgba(0, 0, 0, 0.3);
-  z-index: 95;
+    z-index: 100;
   border-radius: 25px;
   background-color: var(--products-pink-bg);
-  max-width: 400px;
-  max-height: 95vh;
+  top: 50%;
+  left: 50%;
+  width: 310px;
+  max-width: 95vw;
   height: auto;
+  max-height: 95vh;
+  overflow-y: auto;
   padding-top: 40px;
   padding-right: 25px;
   padding-bottom: 40px;
@@ -900,12 +901,13 @@
   font-size: 10px;
   line-height: 1.62;
   @media screen and (min-width: $tablet) {
-    max-width: 450px;
+    width: 430px;
     font-size: 12px;
     line-height: 1.76;
     letter-spacing: 0.04em;
   }
   @media screen and (min-width: $desktop) {
+    width: 480px;
     line-height: 1.94;
   }
 }
@@ -978,9 +980,12 @@
   line-height: 1.62;
   color: var(--accent-color);
   border: 1px solid var(--mobile-menu-color);
-  &:hover,
-  :focus {
-    border: 2px solid var(--accent-color);
+  transition: border var(--btn-trans-duration) var(--btn-trans-timing);
+  .label-item:hover &,
+  .label-item:focus &,
+  .label-item:focus-within & {
+    border: 1.5px solid var(--accent-color);
+    outline: none;
   }
   @media screen and (min-width: $tablet) {
     font-size: 12px;
@@ -996,7 +1001,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
-  fill: currentColor;
+  fill: var(--mobile-menu-color);
   transition: fill var(--btn-trans-duration) var(--btn-trans-timing);
   .label-item:hover &,
   .label-item:focus &,
@@ -1028,12 +1033,15 @@
   }
   &::placeholder {
     font: inherit;
-    color: var(--text-grey-color);
+    color: var(--mobile-menu-color);
   }
   border: 1px solid var(--mobile-menu-color);
-  &:hover,
-  :focus {
-    border: 2px solid var(--accent-color);
+  transition: border var(--btn-trans-duration) var(--btn-trans-timing);
+  .label-item:hover &,
+  .label-item:focus &,
+  .label-item:focus-within & {
+    border: 1.5px solid var(--accent-color);
+    outline: none;
   }
 }
 .modal-buy-now-btn {
@@ -1056,8 +1064,9 @@
   transition: color var(--btn-trans-duration) var(--btn-trans-timing),
     background-color var(--btn-trans-duration) var(--btn-trans-timing);
   &:hover,
-  :focus {
+  &:focus {
     color: var(--text-white-color);
     background-color: var(--accent-color);
+    outline: none;
   }
 }
