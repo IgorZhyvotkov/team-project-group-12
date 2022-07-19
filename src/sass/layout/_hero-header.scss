@@ -767,7 +767,13 @@
 .modal-btn-close-icon {
   width: 14px;
   height: 14px;
-  fill: var(--text-white-color);
+  fill: var(--reviews-bg-color);
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  &:hover,
+  :focus {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-btn-buy-icon {
