@@ -699,9 +699,8 @@
 .backdrop {
   position: absolute;
   top: 0;
-  left: 0;
   z-index: 90;
-  transform: translate(0);
+  transform: translateX(0);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -709,11 +708,14 @@
   flex-direction: column;
   background-color: #e17992;
   display: none;
-  @media screen and (min-width: $tablet) {
-    max-width: 254px;
-    left: auto;
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 767px) {
+    width: 254px;
     right: 0;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 45%;
+    right: 0;
   }
 }
 
