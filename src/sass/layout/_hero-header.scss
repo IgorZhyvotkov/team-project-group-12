@@ -89,7 +89,7 @@
   align-items: center;
   z-index: 6;
 
-  & .nav__item+.nav__item {
+  & .nav__item + .nav__item {
     margin-left: 35px;
   }
 
@@ -388,7 +388,7 @@
   }
 }
 
-.hero-btn__item+.hero-btn__item {
+.hero-btn__item + .hero-btn__item {
   margin-left: 8px;
 
   @media screen and (min-width: $desktop) {
@@ -805,7 +805,7 @@
 
 .modal-buy-now-headder {
   // background-color: ;
-  box-shadow: 0px 0px 10px 15px rgba(221, 113, 221, 0.3);
+  box-shadow: 10px 10px 50px 30px rgba(195, 151, 157, 0.9);
 }
 
 .modal-headder-title {
