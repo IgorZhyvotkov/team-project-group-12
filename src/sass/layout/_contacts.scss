@@ -430,6 +430,7 @@
     line-height: 1.94;
   }
 }
+
 .modal__title--franchise {
   margin-bottom: 20px;
   text-align: center;
@@ -562,4 +563,7 @@
   background-origin: border-box;
   background-repeat: no-repeat;
   background-position: center;
+}
+.modal__cross--franchise {
+  fill: var(--text-grey-color);
 }
