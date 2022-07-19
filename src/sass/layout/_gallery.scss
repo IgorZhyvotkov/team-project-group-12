@@ -62,7 +62,7 @@
 .gallery__img {
   border: none;
   border-radius: 8px;
-
+  cursor: pointer;
   @media screen and (min-width: $tablet) {
     border-radius: 20px;
   }
