@@ -815,7 +815,10 @@
   border-radius: 25px;
   max-width: 450px;
   padding: 50px;
-  height: 500px;
+  height: 540px;
+  @media screen and (min-width: $tablet) {
+    max-height: 500px;
+  }
 }
 
 .modal-headder-title {
