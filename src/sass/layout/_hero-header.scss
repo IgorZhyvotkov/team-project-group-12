@@ -818,7 +818,7 @@
 
 .modal-buy-now-headder {
   // background-color: ;
-  box-shadow: 0px 0px 55px 45px rgba(255, 160, 219, 0.3);
+  box-shadow: 0px 10px 17px 5px rgba(0, 0, 0, 0.3);
   z-index: 95;
   border-radius: 25px;
   background-color: var(--products-pink-bg);
@@ -890,8 +890,8 @@
   width: 100px;
   height: 50px;
   text-align: center;
-  color: #fff;
-  background-color: var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--button-hover-color);
   justify-content: center;
   align-items: center;
   margin-top: 30px;
@@ -904,7 +904,7 @@
   transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
   &:hover,
   :focus {
-    color: var(--accent-color);
-    background-color: var(--products-green-bg);
+    color: var(--text-white-color);
+    background-color: var(--accent-color);
   }
 }
