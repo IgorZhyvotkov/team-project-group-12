@@ -404,85 +404,84 @@
   height: auto;
   max-height: 95vh;
   overflow-y: auto;
-  padding: 40px;
+  padding: 30px;
   text-align: left;
+  font-family: 'DM Sans';
+  font-weight: 500;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.62;
+  color: var(--mobile-menu-color);
   background: var(--text-white-color);
-  border-radius: 4px;
+  border-radius: 25px;
+  box-shadow: 8px 8px 6px 2px rgba(0, 0, 0, 0.3);
   @media screen and (min-width: $tablet) {
-    width: 400px;
+    width: 430px;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: $desktop) {
+    line-height: 1.94;
   }
 }
 .modal__title--franchise {
-  display: block;
-  margin-bottom: 16px;
-  font-family: var(--second-text);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
+  margin-bottom: 20px;
   text-align: center;
+  font-family: var(--second-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
   color: var(--accent-color);
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+  }
   @media screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 1.15;
+    line-height: 1.14;
   }
 }
 .modal__form-field--franchise {
-  display: flex;
-  flex-direction: column;
-  & + & {
-    margin-top: 10px;
-  }
-  input {
-    width: 100%;
-    padding: 11px 12px 11px 42px;
-  }
-  &:hover input,
-  &:focus input,
-  &:focus-within input {
-    border: 1px solid var(--accent-color);
-    outline: none;
+  &:not(:last-child) {
+    margin-bottom: 12px;
   }
 }
 .modal__field-name--franchise {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  display: block;
   color: var(--mobile-menu-color);
+  transition: color var(--btn-trans-duration) var(--btn-trans-timing);
+  .modal__form-field--franchise:hover &,
+  .modal__form-field--franchise:focus &,
+  .modal__form-field--franchise:focus-within & {
+    color: var(--accent-color);
+  }
 }
 .modal__input-wrap--franchise {
   position: relative;
 }
 .modal__form-input--franchise {
-  border: 1px solid var(--mobile-menu-color);
-  border-radius: 4px;
+  width: 100%;
+  border: 1.5px solid var(--mobile-menu-color);
+  border-radius: 20px;
   transition: border var(--btn-trans-duration) var(--btn-trans-timing);
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  @media screen and (min-width: $desktop) {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-  &:hover,
-  &:focus,
-  &:focus-within {
-    border: 1px solid var(--accent-color);
+  padding: 11px 12px 11px 42px;
+  color: var(--accent-color);
+  .modal__form-field--franchise:hover &,
+  .modal__form-field--franchise:focus &,
+  .modal__form-field--franchise:focus-within & {
+    border: 1.5px solid var(--accent-color);
+    outline: none;
   }
   &::placeholder {
-    font-style: inherit;
+    font: inherit;
     color: var(--text-grey-color);
   }
 }
 .modal__input-icon--franchise {
   position: absolute;
-  left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  fill: var(--label-color);
+  left: 12px;
+  fill: currentColor;
   transition: fill var(--btn-trans-duration) var(--btn-trans-timing);
   .modal__form-field--franchise:hover &,
   .modal__form-field--franchise:focus &,
@@ -491,62 +490,58 @@
   }
 }
 .modal__agree-text--franchise {
-  display: block;
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
-  font-size: 12px;
-  line-height: 1.17;
-  color: var(--mobile-menu-color);
-  @media screen and (min-width: $desktop) {
-    font-size: 14px;
-    line-height: 1.71;
-  }
 }
 .modal__check-block--franchise {
+  display: flex;
   margin-right: 7px;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   background-color: transparent;
   border: 1.5px solid var(--mobile-menu-color);
   border-radius: 2px;
   transition: background-color var(--btn-trans-duration) var(--btn-trans-timing),
     border var(--btn-trans-duration) var(--btn-trans-timing);
-  .modal__check-block--franchise:checked + .modal__agree-text--franchise & {
-    background-color: var(--mobile-menu-color);
-    border: 1.5px solid transparent;
-  }
+  // .modal__check-block--franchise:checked + .modal__agree-text--franchise & {
+  //   background-color: var(--mobile-menu-color);
+  //   border: 1.5px solid transparent;
+  // }
 }
 .modal__check-icon--franchise {
-  fill: transparent;
+  // fill: transparent;
   transition: fll var(--btn-trans-duration) var(--btn-trans-timing);
-  .modal__check-block--franchise:checked + .modal__agree-text--franchise & {
-    fill: var(--white-bg-color);
-  }
+  // .modal__check-block--franchise:checked + .modal__agree-text--franchise & {
+  //   fill: var(--white-bg-color);
+  // }
 }
 .modal__agreement--franchise {
-  font: inherit;
-  text-decoration: underline;
   color: var(--text-grey-color);
   transition: color var(--btn-trans-duration) var(--btn-trans-timing);
   &:hover,
   &:focus {
     color: var(--accent-color);
+    outline: none;
   }
 }
 .modal__send-btn--franchise {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (max-width: 767px) {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  min-width: 176px;
-  @extend .main-btn;
+  font: inherit;
+  min-width: 100px;
+  height: 44px;
   color: var(--accent-color);
   background-color: var(--button-hover-color);
+  border: none;
+  border-radius: 20px;
+  transition: background-color var(--btn-trans-duration) var(--btn-trans-timing),
+    color var(--btn-trans-duration) var(--btn-trans-timing);
   &:hover,
   &:focus {
     color: var(--text-white-color);
     background-color: var(--accent-color);
+    outline: none;
   }
 }
