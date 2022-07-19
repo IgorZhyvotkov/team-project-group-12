@@ -403,6 +403,7 @@
 
 /*--------------------------FRANCHISE MODAL--------------------------*/
 .modal--franchise {
+  z-index: 100;
   top: 50%;
   left: 50%;
   width: 310px;
@@ -427,6 +428,7 @@
     letter-spacing: 0.04em;
   }
   @media screen and (min-width: $desktop) {
+    width: 480px;
     line-height: 1.94;
   }
 }
@@ -496,7 +498,6 @@
     fill: var(--accent-color);
   }
 }
-
 .modal__send-btn--franchise {
   display: block;
   margin-left: auto;
@@ -538,21 +539,19 @@
   color: var(--accent-color);
 }
 .check-label__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCentered;
   background-color: transparent;
   width: 16px;
   height: 15px;
   margin-right: 8.23px;
   border: 1px solid var(--accent-color);
   border-radius: 2px;
-  transition: border-color var(--transition-option),
-    background-color var(--transition-option),
-    background-image var(--transition-option),
-    background-size var(--transition-option),
-    background-origin var(--transition-option),
-    background-repeat var(--transition-option);
+  transition: border-color var(--btn-trans-duration) var(--btn-trans-timing),
+    background-color var(--btn-trans-duration) var(--btn-trans-timing),
+    background-image var(--btn-trans-duration) var(--btn-trans-timing),
+    background-size var(--btn-trans-duration) var(--btn-trans-timing),
+    background-origin var(--btn-trans-duration) var(--btn-trans-timing),
+    background-repeat var(--btn-trans-duration) var(--btn-trans-timing);
 }
 .check-label__checkbox:checked + .check-label__icon {
   border-color: var(--accent-color);
