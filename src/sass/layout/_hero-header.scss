@@ -893,6 +893,7 @@
   line-height: 1.31;
   display: flex;
   border-radius: 20px;
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
   &:hover,
   :focus {
     color: var(--accent-color);
