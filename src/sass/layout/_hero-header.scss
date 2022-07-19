@@ -89,7 +89,7 @@
   align-items: center;
   z-index: 6;
 
-  & .nav__item + .nav__item {
+  & .nav__item+.nav__item {
     margin-left: 35px;
   }
 
@@ -164,9 +164,9 @@
   }
 }
 
-.hero-lable__pre {
-  margin: 0;
-}
+// .hero-lable__pre {
+//   margin: 0;
+// }
 
 .hero-lable__title {
   margin: 0;
@@ -200,17 +200,20 @@
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  width: 218px;
 
   color: var(--white-bg-color);
 
   @media screen and (min-width: $tablet) {
     font-size: 22px;
     line-height: 1.145;
+    width: 162px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 38px;
     line-height: 1.145;
+    width: 277px;
   }
 }
 
@@ -385,7 +388,7 @@
   }
 }
 
-.hero-btn__item + .hero-btn__item {
+.hero-btn__item+.hero-btn__item {
   margin-left: 8px;
 
   @media screen and (min-width: $desktop) {
@@ -444,6 +447,7 @@
     height: 40px;
     font-size: 14px;
     line-height: 1.28;
+    padding: 11px 23px;
   }
 }
 
