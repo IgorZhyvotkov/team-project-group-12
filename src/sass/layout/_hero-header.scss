@@ -810,9 +810,10 @@
 
 .modal-buy-now-headder {
   // background-color: ;
-  box-shadow: 0px 0px 10px 15px rgba(221, 113, 221, 0.3);
+  box-shadow: 0px 0px 55px 45px rgba(255, 160, 219, 0.3);
   z-index: 95;
   border-radius: 25px;
+  background-color: var(--products-pink-bg);
   max-width: 450px;
   padding: 50px;
   height: 540px;
@@ -892,4 +893,9 @@
   line-height: 1.31;
   display: flex;
   border-radius: 20px;
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+    background-color: var(--products-green-bg);
+  }
 }
