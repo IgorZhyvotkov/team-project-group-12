@@ -699,15 +699,17 @@
 .backdrop {
   position: absolute;
   top: 0;
-  left: 0;
   z-index: 90;
+
   width: 100vw;
   height: 100vh;
   display: flex;
   position: fixed;
   flex-direction: column;
   background-color: #e17992;
+
   transform: translate(100%);
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -725,6 +727,7 @@
     left: auto;
     right: 0;
     transform: translate(0%);
+
   }
 }
 
@@ -776,7 +779,13 @@
 .modal-btn-close-icon {
   width: 14px;
   height: 14px;
-  fill: var(--text-white-color);
+  fill: var(--reviews-bg-color);
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  &:hover,
+  :focus {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-btn-buy-icon {
@@ -821,9 +830,10 @@
 
 .modal-buy-now-headder {
   // background-color: ;
-  box-shadow: 0px 0px 10px 15px rgba(221, 113, 221, 0.3);
+  box-shadow: 0px 10px 17px 5px rgba(0, 0, 0, 0.3);
   z-index: 95;
   border-radius: 25px;
+  background-color: var(--products-pink-bg);
   max-width: 450px;
   padding: 50px;
   height: 540px;
@@ -893,8 +903,8 @@
   width: 100px;
   height: 50px;
   text-align: center;
-  color: #fff;
-  background-color: var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--button-hover-color);
   justify-content: center;
   align-items: center;
   margin-top: 30px;
@@ -904,4 +914,10 @@
   line-height: 1.31;
   display: flex;
   border-radius: 20px;
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:hover,
+  :focus {
+    color: var(--text-white-color);
+    background-color: var(--accent-color);
+  }
 }

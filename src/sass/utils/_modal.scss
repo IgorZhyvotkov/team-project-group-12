@@ -59,6 +59,11 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  fill: #444;
+  fill: var(--reviews-bg-color);
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
+  &:hover,
+  :focus {
+    fill: var(--accent-color);
+  }
 }
