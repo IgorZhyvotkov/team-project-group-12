@@ -4,7 +4,6 @@
   background-color: var(--hero-bg-color);
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .container__header-hero {
@@ -878,7 +877,7 @@
 
 .modal-buy-now-header {
   box-shadow: 8px 8px 6px 2px rgba(0, 0, 0, 0.3);
-    z-index: 100;
+  z-index: 100;
   border-radius: 25px;
   background-color: var(--products-pink-bg);
   top: 50%;
@@ -1066,4 +1065,9 @@
     background-color: var(--accent-color);
     outline: none;
   }
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+  --animate-repeat: 2;
 }
